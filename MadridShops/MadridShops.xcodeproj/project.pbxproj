@@ -20,6 +20,7 @@
 		E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B71F765CB4007E9C9F /* Shop.swift */; };
 		E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B91F765F39007E9C9F /* Shops.swift */; };
 		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
+		E55F60581F76F8AB008A670B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E55F60571F76F8AB008A670B /* Podfile */; };
 		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		E546F6B71F765CB4007E9C9F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		E546F6B91F765F39007E9C9F /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
 		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
+		E55F60571F76F8AB008A670B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E55F605A1F770B9C008A670B /* madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madrid.jpg; sourceTree = "<group>"; };
 		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -85,6 +88,7 @@
 		E546F6881F75D58C007E9C9F = {
 			isa = PBXGroup;
 			children = (
+				E55F60571F76F8AB008A670B /* Podfile */,
 				E546F6931F75D58C007E9C9F /* MadridShops */,
 				E546F6A81F75D58C007E9C9F /* MadridShopsTests */,
 				E546F6921F75D58C007E9C9F /* Products */,
@@ -104,12 +108,12 @@
 		E546F6931F75D58C007E9C9F /* MadridShops */ = {
 			isa = PBXGroup;
 			children = (
+				E55F60591F770B48008A670B /* Assets */,
 				E546F6941F75D58C007E9C9F /* AppDelegate.swift */,
 				E532C3B41F769204004F3930 /* TypeAlias.swift */,
 				E546F6B61F75D647007E9C9F /* Model */,
 				E546F6B51F75D633007E9C9F /* View */,
 				E546F6B41F75D629007E9C9F /* Controller */,
-				E546F69B1F75D58C007E9C9F /* Assets.xcassets */,
 				E546F6A01F75D58C007E9C9F /* Info.plist */,
 			);
 			path = MadridShops;
@@ -151,6 +155,15 @@
 				E546F6B91F765F39007E9C9F /* Shops.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E55F60591F770B48008A670B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E55F605A1F770B9C008A670B /* madrid.jpg */,
+				E546F69B1F75D58C007E9C9F /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		E56A78FA1F76E56C00008775 /* Frameworks */ = {
@@ -251,6 +264,7 @@
 			files = (
 				E546F69F1F75D58C007E9C9F /* LaunchScreen.storyboard in Resources */,
 				E546F69C1F75D58C007E9C9F /* Assets.xcassets in Resources */,
+				E55F60581F76F8AB008A670B /* Podfile in Resources */,
 				E546F69A1F75D58C007E9C9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
