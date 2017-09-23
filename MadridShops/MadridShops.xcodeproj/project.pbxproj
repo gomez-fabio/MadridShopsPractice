@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */; };
+		E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B41F769204004F3930 /* TypeAlias.swift */; };
+		E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */; };
 		E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6941F75D58C007E9C9F /* AppDelegate.swift */; };
-		E546F6971F75D58C007E9C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6961F75D58C007E9C9F /* ViewController.swift */; };
+		E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */; };
 		E546F69A1F75D58C007E9C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546F6981F75D58C007E9C9F /* Main.storyboard */; };
 		E546F69C1F75D58C007E9C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E546F69B1F75D58C007E9C9F /* Assets.xcassets */; };
 		E546F69F1F75D58C007E9C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546F69D1F75D58C007E9C9F /* LaunchScreen.storyboard */; };
-		E546F6AA1F75D58C007E9C9F /* MadridShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6A91F75D58C007E9C9F /* MadridShopsTests.swift */; };
+		E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B71F765CB4007E9C9F /* Shop.swift */; };
+		E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B91F765F39007E9C9F /* Shops.swift */; };
+		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
+		E532C3B41F769204004F3930 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImplementation.swift; sourceTree = "<group>"; };
 		E546F6911F75D58C007E9C9F /* MadridShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E546F6941F75D58C007E9C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E546F6961F75D58C007E9C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsCollectionViewController.swift; sourceTree = "<group>"; };
 		E546F6991F75D58C007E9C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E546F69B1F75D58C007E9C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E546F69E1F75D58C007E9C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E546F6A01F75D58C007E9C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E546F6A51F75D58C007E9C9F /* MadridShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadridShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E546F6A91F75D58C007E9C9F /* MadridShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadridShopsTests.swift; sourceTree = "<group>"; };
 		E546F6AB1F75D58C007E9C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E546F6B71F765CB4007E9C9F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		E546F6B91F765F39007E9C9F /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
+		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E532C3B11F768BFC004F3930 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */,
+				E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
 		E546F6881F75D58C007E9C9F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E546F6941F75D58C007E9C9F /* AppDelegate.swift */,
+				E532C3B41F769204004F3930 /* TypeAlias.swift */,
 				E546F6B61F75D647007E9C9F /* Model */,
 				E546F6B51F75D633007E9C9F /* View */,
 				E546F6B41F75D629007E9C9F /* Controller */,
@@ -90,8 +110,8 @@
 		E546F6A81F75D58C007E9C9F /* MadridShopsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E546F6A91F75D58C007E9C9F /* MadridShopsTests.swift */,
 				E546F6AB1F75D58C007E9C9F /* Info.plist */,
+				E546F6BB1F766277007E9C9F /* ShopsTest.swift */,
 			);
 			path = MadridShopsTests;
 			sourceTree = "<group>";
@@ -99,7 +119,7 @@
 		E546F6B41F75D629007E9C9F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E546F6961F75D58C007E9C9F /* ViewController.swift */,
+				E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +136,9 @@
 		E546F6B61F75D647007E9C9F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E532C3B11F768BFC004F3930 /* Interactors */,
+				E546F6B71F765CB4007E9C9F /* Shop.swift */,
+				E546F6B91F765F39007E9C9F /* Shops.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,8 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E546F6971F75D58C007E9C9F /* ViewController.swift in Sources */,
+				E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */,
+				E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */,
+				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
+				E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */,
 				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
+				E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */,
+				E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E546F6AA1F75D58C007E9C9F /* MadridShopsTests.swift in Sources */,
+				E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
