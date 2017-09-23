@@ -8,7 +8,8 @@
 
 import Foundation
 
-class DownloadAllShopsInteractorFakeImplementation: DownloadAllShopsInteractor {
+class DownloadAllShopsInteractorFakeImplementation : DownloadAllShopsInteractor {
+    
     func execute(onSuccess: @escaping (Shops) -> Void) {
         execute(onSuccess: onSuccess, onError: nil)
     }
@@ -17,8 +18,8 @@ class DownloadAllShopsInteractorFakeImplementation: DownloadAllShopsInteractor {
         let shops = Shops()
         
         for i in 0...10 {
-            let shop = Shop(name: "Shop number \(i)")
-            shop.address = "Address \(i)"
+            let shop = Shop(name: "Shop number \( i )")
+            shop.address = "Address \( i )"
             
             shops.add(shop: shop)
         }
@@ -27,6 +28,4 @@ class DownloadAllShopsInteractorFakeImplementation: DownloadAllShopsInteractor {
             onSuccess(shops)
         }
     }
-    
-    
 }

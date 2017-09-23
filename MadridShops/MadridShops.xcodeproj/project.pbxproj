@@ -10,6 +10,8 @@
 		E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */; };
 		E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B41F769204004F3930 /* TypeAlias.swift */; };
 		E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */; };
+		E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */; };
+		E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3BA1F76D8AD004F3930 /* ShopCell.swift */; };
 		E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6941F75D58C007E9C9F /* AppDelegate.swift */; };
 		E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */; };
 		E546F69A1F75D58C007E9C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546F6981F75D58C007E9C9F /* Main.storyboard */; };
@@ -18,6 +20,7 @@
 		E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B71F765CB4007E9C9F /* Shop.swift */; };
 		E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B91F765F39007E9C9F /* Shops.swift */; };
 		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
+		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 		E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
 		E532C3B41F769204004F3930 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImplementation.swift; sourceTree = "<group>"; };
+		E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsCollectionViewController+CollectionExtension.swift"; sourceTree = "<group>"; };
+		E532C3BA1F76D8AD004F3930 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		E546F6911F75D58C007E9C9F /* MadridShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E546F6941F75D58C007E9C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsCollectionViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		E546F6B71F765CB4007E9C9F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		E546F6B91F765F39007E9C9F /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
 		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
+		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				E546F6931F75D58C007E9C9F /* MadridShops */,
 				E546F6A81F75D58C007E9C9F /* MadridShopsTests */,
 				E546F6921F75D58C007E9C9F /* Products */,
+				E56A78FA1F76E56C00008775 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */,
+				E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +138,7 @@
 			children = (
 				E546F6981F75D58C007E9C9F /* Main.storyboard */,
 				E546F69D1F75D58C007E9C9F /* LaunchScreen.storyboard */,
+				E532C3BA1F76D8AD004F3930 /* ShopCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +151,14 @@
 				E546F6B91F765F39007E9C9F /* Shops.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E56A78FA1F76E56C00008775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E56A78FB1F76E56C00008775 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +212,11 @@
 					E546F6901F75D58C007E9C9F = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E546F6A41F75D58C007E9C9F = {
 						CreatedOnToolsVersion = 9.0;
@@ -247,11 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */,
+				E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */,
 				E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */,
 				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
 				E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */,
 				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
 				E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */,
+				E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */,
 				E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UC7757W7N;
+				DEVELOPMENT_TEAM = NW392JLHHF;
 				INFOPLIST_FILE = MadridShops/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShops;
@@ -421,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UC7757W7N;
+				DEVELOPMENT_TEAM = NW392JLHHF;
 				INFOPLIST_FILE = MadridShops/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShops;
