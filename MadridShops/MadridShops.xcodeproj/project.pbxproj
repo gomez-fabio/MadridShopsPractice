@@ -34,6 +34,7 @@
 		E5F3B0281F781CD4008F5EBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0271F781CD4008F5EBB /* Constants.swift */; };
 		E5F3B02A1F782C42008F5EBB /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0291F782C42008F5EBB /* ShopDetailViewController.swift */; };
 		E5F3B02C1F782C66008F5EBB /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B02B1F782C66008F5EBB /* ActivityDetailViewController.swift */; };
+		E5F3B02F1F7838E0008F5EBB /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B02E1F7838E0008F5EBB /* String+Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E5F3B0271F781CD4008F5EBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E5F3B0291F782C42008F5EBB /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		E5F3B02B1F782C66008F5EBB /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		E5F3B02E1F7838E0008F5EBB /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +135,9 @@
 		E546F6931F75D58C007E9C9F /* MadridShops */ = {
 			isa = PBXGroup;
 			children = (
-				E546F69B1F75D58C007E9C9F /* Assets.xcassets */,
 				E546F6941F75D58C007E9C9F /* AppDelegate.swift */,
-				E532C3B41F769204004F3930 /* TypeAlias.swift */,
-				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
+				E546F69B1F75D58C007E9C9F /* Assets.xcassets */,
+				E5F3B02D1F78386A008F5EBB /* Utils */,
 				E546F6B61F75D647007E9C9F /* Model */,
 				E546F6B51F75D633007E9C9F /* View */,
 				E546F6B41F75D629007E9C9F /* Controller */,
@@ -206,6 +207,16 @@
 				E5F3B0211F78141A008F5EBB /* JSONParser.swift */,
 			);
 			path = JsonParsers;
+			sourceTree = "<group>";
+		};
+		E5F3B02D1F78386A008F5EBB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E532C3B41F769204004F3930 /* TypeAlias.swift */,
+				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
+				E5F3B02E1F7838E0008F5EBB /* String+Image.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				E5F3B02C1F782C66008F5EBB /* ActivityDetailViewController.swift in Sources */,
 				E5F3B0281F781CD4008F5EBB /* Constants.swift in Sources */,
 				E5F3B0241F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift in Sources */,
+				E5F3B02F1F7838E0008F5EBB /* String+Image.swift in Sources */,
 				E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */,
 				E5F3B0151F77BA73008F5EBB /* ActivitiesCollectionViewController.swift in Sources */,
 				E5F3B02A1F782C42008F5EBB /* ShopDetailViewController.swift in Sources */,

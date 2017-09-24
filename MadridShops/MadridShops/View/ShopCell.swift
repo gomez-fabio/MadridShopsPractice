@@ -17,6 +17,6 @@ class ShopCell: UICollectionViewCell {
     func refresh(shop: Shop) {
         self.shop = shop
         self.label.text = shop.name
-        //TODO IMAGE VIEW
+        self.shop?.logo.loadImage(into: imageView)
     }
 }

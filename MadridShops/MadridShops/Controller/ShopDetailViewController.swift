@@ -21,5 +21,6 @@ class ShopDetailViewController: UIViewController {
         
         self.title = self.shop?.name
         self.shopDescription.text = self.shop?.description_en
+        self.shop?.image.loadImage(into: shopImage)
     }
 }

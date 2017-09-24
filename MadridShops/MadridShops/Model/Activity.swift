@@ -15,7 +15,7 @@ public class Activity {
     var latitude:  Float? = nil
     var longitude: Float? = nil
     var image : String = ""
-    var log: String = ""
+    var logo: String = ""
     var openingHours_en: String = ""
     var openingHours_es: String = ""
     var address: String = ""

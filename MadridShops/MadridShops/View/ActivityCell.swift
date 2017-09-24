@@ -17,6 +17,6 @@ class ActivityCell: UICollectionViewCell {
     func refresh(activity: Activity) {
         self.activity = activity
         self.label.text = activity.name
-        //TODO IMAGE VIEW
+        self.activity?.logo.loadImage(into: imageView)
     }
 }

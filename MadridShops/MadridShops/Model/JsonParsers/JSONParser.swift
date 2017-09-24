@@ -19,6 +19,10 @@ func parseShops(data: Data) -> Shops {
         for shopJson in result {
             let shop = Shop(name: shopJson["name"]! as! String)
             shop.address = shopJson["address"]! as! String
+            shop.logo = shopJson["logo_img"] as! String
+            shop.image = shopJson["img"] as! String
+            shop.description_en = shopJson["description_en"] as! String
+            
             shops.add(shop: shop)
         }
     } catch {
@@ -38,6 +42,10 @@ func parseActivities(data: Data) -> Activities {
         for activityJson in result {
             let activity = Activity(name: activityJson["name"]! as! String)
             activity.address = activityJson["address"]! as! String
+            activity.logo = activityJson["logo_img"] as! String
+            activity.image = activityJson["img"] as! String
+            activity.description_en = activityJson["description_en"] as! String
+            
             activities.add(activity: activity)
         }
     } catch {

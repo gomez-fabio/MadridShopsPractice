@@ -21,5 +21,7 @@ class ActivityDetailViewController: UIViewController {
         
         self.title = self.activity?.name
         self.activityDescription.text = self.activity?.description_en
+        self.activity?.image.loadImage(into: activityImage
+        )
     }
 }
