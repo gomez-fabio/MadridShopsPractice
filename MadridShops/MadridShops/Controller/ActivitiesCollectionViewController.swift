@@ -20,7 +20,7 @@ class ActivitiesCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadActivitiesInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorFakeImplementation()
+        let downloadActivitiesInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSOpImplementation()
         
         downloadActivitiesInteractor.execute(onSuccess: { (activities:Activities) in
             print ("Name: " + activities.get(index: 0).name)

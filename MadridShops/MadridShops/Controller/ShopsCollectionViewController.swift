@@ -20,7 +20,7 @@ class ShopsCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorFakeImplementation()
+        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSOpImplementation()
         
         downloadShopsInteractor.execute(onSuccess: { (shops:Shops) in
             print ("Name: " + shops.get(index: 0).name)
