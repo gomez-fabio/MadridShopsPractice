@@ -1,14 +1,14 @@
 //
-//  Shop.swift
+//  Activity.swift
 //  MadridShops
 //
-//  Created by Fabio Gomez on 23/9/17.
+//  Created by Fabio Gomez on 24/9/17.
 //  Copyright © 2017 Fabio Gomez. All rights reserved.
 //
 
 import Foundation
 
-public class Shop {
+public class Activity {
     var name: String
     var description_en: String = ""
     var description_es: String = ""
@@ -22,7 +22,7 @@ public class Shop {
     var telephone: String = ""
     var url: String = ""
     
-   public init(name: String) {
+    public init(name: String) {
         self.name = name
     }
 }
