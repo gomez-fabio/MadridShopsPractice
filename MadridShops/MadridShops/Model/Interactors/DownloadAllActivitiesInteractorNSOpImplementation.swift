@@ -20,22 +20,9 @@ class DownloadAllActivitiesInteractorNSOpImplementation : DownloadAllActivitiesI
         queue.addOperation {
             let urlString = "https://madrid-shops.com/json_new/getActivities.php"
             if let url = URL(string: urlString), let data = NSData(contentsOf: url) as Data?{
-                do{
-                    let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
-                    let result = jsonObject["result"] as! [Dictionary<String, Any>]
-                    let activities = Activities()
-                    
-                    for activityJson in result {
-                        let activity = Activity(name: activityJson["name"]! as! String)
-                        activity.address = activityJson["address"]! as! String
-                        activities.add(activity: activity)
-                    }
-                    
-                    OperationQueue.main.addOperation {
-                        onSuccess(activities)
-                    }
-                } catch {
-                    
+                let activities = parseActivities(data: data)
+                OperationQueue.main.addOperation {
+                    onSuccess(activities)
                 }
             }
         }

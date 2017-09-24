@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */; };
 		E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B41F769204004F3930 /* TypeAlias.swift */; };
-		E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */; };
 		E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */; };
 		E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3BA1F76D8AD004F3930 /* ShopCell.swift */; };
 		E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6941F75D58C007E9C9F /* AppDelegate.swift */; };
@@ -28,10 +27,10 @@
 		E5F3B0131F77BA02008F5EBB /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0121F77BA02008F5EBB /* ActivityCell.swift */; };
 		E5F3B0151F77BA73008F5EBB /* ActivitiesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0141F77BA73008F5EBB /* ActivitiesCollectionViewController.swift */; };
 		E5F3B0171F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */; };
-		E5F3B0191F77BB31008F5EBB /* DownloadAllActivitiesInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0181F77BB31008F5EBB /* DownloadAllActivitiesInteractorFakeImplementation.swift */; };
 		E5F3B01B1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B01A1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift */; };
 		E5F3B01D1F77D7CB008F5EBB /* DownloadAllShopsInteractorNSOpImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B01C1F77D7CB008F5EBB /* DownloadAllShopsInteractorNSOpImplementation.swift */; };
 		E5F3B01F1F77DD9A008F5EBB /* DownloadAllActivitiesInteractorNSOpImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B01E1F77DD9A008F5EBB /* DownloadAllActivitiesInteractorNSOpImplementation.swift */; };
+		E5F3B0221F78141A008F5EBB /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0211F78141A008F5EBB /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
 		E532C3B41F769204004F3930 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
-		E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImplementation.swift; sourceTree = "<group>"; };
 		E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsCollectionViewController+CollectionExtension.swift"; sourceTree = "<group>"; };
 		E532C3BA1F76D8AD004F3930 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		E546F6911F75D58C007E9C9F /* MadridShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,10 +68,10 @@
 		E5F3B0121F77BA02008F5EBB /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		E5F3B0141F77BA73008F5EBB /* ActivitiesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewController.swift; sourceTree = "<group>"; };
 		E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractor.swift; sourceTree = "<group>"; };
-		E5F3B0181F77BB31008F5EBB /* DownloadAllActivitiesInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorFakeImplementation.swift; sourceTree = "<group>"; };
 		E5F3B01A1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivitiesCollectionViewController+CollectionExtension.swift"; sourceTree = "<group>"; };
 		E5F3B01C1F77D7CB008F5EBB /* DownloadAllShopsInteractorNSOpImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSOpImplementation.swift; sourceTree = "<group>"; };
 		E5F3B01E1F77DD9A008F5EBB /* DownloadAllActivitiesInteractorNSOpImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorNSOpImplementation.swift; sourceTree = "<group>"; };
+		E5F3B0211F78141A008F5EBB /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */,
-				E5F3B0181F77BB31008F5EBB /* DownloadAllActivitiesInteractorFakeImplementation.swift */,
 				E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */,
-				E532C3B61F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift */,
 				E5F3B01C1F77D7CB008F5EBB /* DownloadAllShopsInteractorNSOpImplementation.swift */,
 				E5F3B01E1F77DD9A008F5EBB /* DownloadAllActivitiesInteractorNSOpImplementation.swift */,
 			);
@@ -177,6 +173,7 @@
 		E546F6B61F75D647007E9C9F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5F3B0201F7813F8008F5EBB /* JsonParsers */,
 				E532C3B11F768BFC004F3930 /* Interactors */,
 				E546F6B71F765CB4007E9C9F /* Shop.swift */,
 				E546F6B91F765F39007E9C9F /* Shops.swift */,
@@ -192,6 +189,14 @@
 				E56A78FB1F76E56C00008775 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5F3B0201F7813F8008F5EBB /* JsonParsers */ = {
+			isa = PBXGroup;
+			children = (
+				E5F3B0211F78141A008F5EBB /* JSONParser.swift */,
+			);
+			path = JsonParsers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,13 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5F3B0191F77BB31008F5EBB /* DownloadAllActivitiesInteractorFakeImplementation.swift in Sources */,
 				E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */,
 				E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */,
+				E5F3B0221F78141A008F5EBB /* JSONParser.swift in Sources */,
 				E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */,
 				E5F3B01D1F77D7CB008F5EBB /* DownloadAllShopsInteractorNSOpImplementation.swift in Sources */,
 				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
-				E532C3B71F7692DA004F3930 /* DownloadAllShopsInteractorFakeImplementation.swift in Sources */,
 				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
 				E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */,
 				E5F3B0131F77BA02008F5EBB /* ActivityCell.swift in Sources */,
