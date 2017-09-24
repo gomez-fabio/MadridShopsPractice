@@ -31,5 +31,13 @@ class ActivitiesCollectionViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showActivityDetailSegue" {
+            let vc = segue.destination as! ActivityDetailViewController
+            let indexPath = self.activitiesCollectionView.indexPathsForSelectedItems![0]
+            let activity = self.activities?.get(index: indexPath.row)
+            vc.activity = activity
+        }
+    }
     
 }

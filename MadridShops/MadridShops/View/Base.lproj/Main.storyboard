@@ -153,6 +153,7 @@
                                         <connections>
                                             <outlet property="imageView" destination="ugR-XQ-AXl" id="8ec-5b-cIC"/>
                                             <outlet property="label" destination="zYp-Ij-CEk" id="bCG-2m-5LH"/>
+                                            <segue destination="tk4-PC-kqZ" kind="show" identifier="showShopDetailSegue" id="FLo-Fp-vCb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -181,7 +182,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="-113"/>
+            <point key="canvasLocation" x="940" y="-335"/>
+        </scene>
+        <!--Shop Detail View Controller-->
+        <scene sceneID="XTA-T0-qoa">
+            <objects>
+                <viewController id="tk4-PC-kqZ" customClass="ShopDetailViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsr-eH-gpi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-bB-YtA">
+                                <rect key="frame" x="0.0" y="64" width="414" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deA-ge-H6S">
+                                <rect key="frame" x="0.0" y="517" width="414" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NFe-Uv-Pmq">
+                                <rect key="frame" x="20" y="278" width="374" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem fistrum diodeno por la gloria de mi madre sexuarl no puedor al ataquerl ese que llega qué dise usteer por la gloria de mi madre quietooor. Ese que llega hasta luego Lucas al ataquerl qué dise usteer. Al ataquerl de la pradera caballo blanco caballo negroorl amatomaa qué dise usteer por la gloria de mi madre está la cosa muy malar a wan está la cosa muy malar sexuarl. Papaar papaar torpedo ese pedazo de ese que llega. Hasta luego Lucas ahorarr te va a hasé pupitaa está la cosa muy malar ese hombree quietooor. Mamaar ese hombree qué dise usteer de la pradera condemor pecador. Quietooor llevame al sircoo mamaar me cago en tus muelas llevame al sircoo no te digo trigo por no llamarte Rodrigor ese hombree no puedor papaar papaar.
+
+Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Benemeritaar se calle ustée va usté muy cargadoo qué dise usteer por la gloria de mi madre no puedor. Pupita va usté muy cargadoo fistro quietooor la caidita mamaar se calle ustée sexuarl te va a hasé pupitaa fistro está la cosa muy malar. Te va a hasé pupitaa diodeno diodenoo ese pedazo de se calle ustée te va a hasé pupitaa amatomaa a wan ese que llega llevame al sircoo llevame al sircoo. Ese hombree pecador por la gloria de mi madre ese pedazo de tiene musho peligro sexuarl.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="UuT-uZ-6QW"/>
+                    </view>
+                    <connections>
+                        <outlet property="shopDescription" destination="NFe-Uv-Pmq" id="a9c-M1-APp"/>
+                        <outlet property="shopImage" destination="uC4-bB-YtA" id="HPz-ZM-NCS"/>
+                        <outlet property="shopMapImage" destination="deA-ge-H6S" id="EKL-xG-sdp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91M-kZ-uAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="-335"/>
         </scene>
         <!--Activities-->
         <scene sceneID="5qs-fb-9Dy">
@@ -227,6 +268,7 @@
                                         <connections>
                                             <outlet property="imageView" destination="O48-kL-d8f" id="aPM-3P-rMa"/>
                                             <outlet property="label" destination="ywI-qx-RjT" id="1c9-oQ-gkw"/>
+                                            <segue destination="bwZ-ie-qT4" kind="show" identifier="showActivityDetailSegue" id="xss-sa-giP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -256,6 +298,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWR-W5-pNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940.57971014492762" y="553.53260869565224"/>
+        </scene>
+        <!--Activity Detail View Controller-->
+        <scene sceneID="zRu-Xh-FVF">
+            <objects>
+                <viewController id="bwZ-ie-qT4" customClass="ActivityDetailViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WbR-Y3-Z4p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Sc-Fcr">
+                                <rect key="frame" x="20" y="307" width="374" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem fistrum papaar papaar te voy a borrar el cerito por la gloria de mi madre diodenoo llevame al sircoo apetecan mamaar qué dise usteer no te digo trigo por no llamarte Rodrigor. Condemor papaar papaar no te digo trigo por no llamarte Rodrigor a peich ese pedazo de a gramenawer diodenoo caballo blanco caballo negroorl la caidita caballo blanco caballo negroorl apetecan. Te voy a borrar el cerito papaar papaar mamaar por la gloria de mi madre. Pupita benemeritaar pupita llevame al sircoo jarl no puedor va usté muy cargadoo a gramenawer. Ese hombree a wan jarl ahorarr amatomaa está la cosa muy malar torpedo. De la pradera ese pedazo de de la pradera llevame al sircoo está la cosa muy malar a wan no puedor ese hombree. Benemeritaar diodeno se calle ustée ahorarr.
+
+Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl apetecan diodeno caballo blanco caballo negroorl me cago en tus muelas. Pecador fistro te va a hasé pupitaa sexuarl te va a hasé pupitaa. Benemeritaar por la gloria de mi madre está la cosa muy malar pupita ahorarr llevame al sircoo jarl sexuarl jarl se calle ustée ese que llega. Quietooor va usté muy cargadoo pupita se calle ustée qué dise usteer hasta luego Lucas hasta luego Lucas papaar papaar papaar papaar ese hombree.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-tg-90p">
+                                <rect key="frame" x="0.0" y="64" width="414" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-pL-nln">
+                                <rect key="frame" x="0.0" y="582" width="414" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Uw5-8d-6p2"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityDescription" destination="1sg-Sc-Fcr" id="xbe-5G-NBm"/>
+                        <outlet property="activityImage" destination="EFe-tg-90p" id="c55-9l-e22"/>
+                        <outlet property="activityMapImage" destination="Mgp-pL-nln" id="zmL-Tp-Ixh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJf-uc-jBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="553"/>
         </scene>
     </scenes>
     <resources>
