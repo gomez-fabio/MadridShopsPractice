@@ -23,7 +23,6 @@ class ActivitiesCollectionViewController: UIViewController {
         let downloadActivitiesInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSURLSessionImplementation()
         
         downloadActivitiesInteractor.execute(onSuccess: { (activities:Activities) in
-            print ("Name: " + activities.get(index: 0).name)
             self.activities = activities
             self.activitiesCollectionView.delegate = self
             self.activitiesCollectionView.dataSource = self
@@ -40,4 +39,8 @@ class ActivitiesCollectionViewController: UIViewController {
         }
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewDidLayoutSubviews()
+        activitiesCollectionView.reloadData()
+    }
 }

@@ -23,7 +23,6 @@ class ShopsCollectionViewController: UIViewController {
         let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImplementation()
         
         downloadShopsInteractor.execute(onSuccess: { (shops:Shops) in
-            print ("Name: " + shops.get(index: 0).name)
             self.shops = shops
             self.shopsCollectionView.delegate = self
             self.shopsCollectionView.dataSource = self
@@ -40,5 +39,9 @@ class ShopsCollectionViewController: UIViewController {
         }
     }
 
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewDidLayoutSubviews()
+        shopsCollectionView.reloadData()
+    }
 }
 
