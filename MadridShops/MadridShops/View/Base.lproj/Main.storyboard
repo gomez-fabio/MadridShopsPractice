@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gNl-XQ-Pg3">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,7 +20,7 @@
             <objects>
                 <navigationController id="gNl-XQ-Pg3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWp-g0-YyC">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -36,59 +36,46 @@
             <objects>
                 <viewController id="wGH-tF-GG4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zS7-mG-mXg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madrid" translatesAutoresizingMaskIntoConstraints="NO" id="bZV-bq-aY0">
-                                <rect key="frame" x="0.0" y="39" width="414" height="697"/>
+                                <rect key="frame" x="0.0" y="39" width="375" height="628"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5BR-1f-f8b">
-                                <rect key="frame" x="0.0" y="128" width="414" height="105"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P2-BE-Nov">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="105"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Shops">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="ohg-yA-r1B"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-tG-BnF">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="105"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Activities">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="ezB-hY-M2e" kind="show" id="d3D-Dy-hDZ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-tG-BnF">
+                                <rect key="frame" x="187.5" y="128" width="187.5" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Activities">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ezB-hY-M2e" kind="show" id="d3D-Dy-hDZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P2-BE-Nov">
+                                <rect key="frame" x="0.0" y="128" width="187.5" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Shops">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ohg-yA-r1B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3w7-7Z-G0o" firstAttribute="bottom" secondItem="5BR-1f-f8b" secondAttribute="bottom" constant="503" id="7dP-M9-QfH"/>
+                            <constraint firstItem="1P2-BE-Nov" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="7Ch-b6-05o"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="bottom" secondItem="bZV-bq-aY0" secondAttribute="bottom" id="7hG-Bo-FJg"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="centerX" secondItem="zS7-mG-mXg" secondAttribute="centerX" id="8gj-gR-Gvn"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="leading" secondItem="zS7-mG-mXg" secondAttribute="leading" id="ADJ-vz-EdM"/>
+                            <constraint firstItem="PWe-tG-BnF" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="CUO-BP-pey"/>
+                            <constraint firstItem="3w7-7Z-G0o" firstAttribute="trailing" secondItem="PWe-tG-BnF" secondAttribute="trailing" id="F64-Jt-iY8"/>
                             <constraint firstItem="bZV-bq-aY0" firstAttribute="leading" secondItem="3w7-7Z-G0o" secondAttribute="leading" id="FX4-YY-GnM"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="leading" secondItem="bZV-bq-aY0" secondAttribute="leading" id="LpA-zg-Fp2"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="trailing" secondItem="3w7-7Z-G0o" secondAttribute="trailing" id="MiS-Ko-Ndg"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="leading" secondItem="zS7-mG-mXg" secondAttribute="leading" id="MwX-sx-dJI"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="centerX" secondItem="bZV-bq-aY0" secondAttribute="centerX" id="P5A-10-pGl"/>
+                            <constraint firstItem="PWe-tG-BnF" firstAttribute="width" secondItem="zS7-mG-mXg" secondAttribute="width" multiplier="0.5" id="Qaf-Zv-eus"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="trailing" secondItem="bZV-bq-aY0" secondAttribute="trailing" id="Tmh-tk-7Kj"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="leading" secondItem="3w7-7Z-G0o" secondAttribute="leading" id="dZa-Mz-Jin"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="top" secondItem="bZV-bq-aY0" secondAttribute="top" constant="25" id="f3y-dD-s4W"/>
-                            <constraint firstAttribute="bottom" secondItem="5BR-1f-f8b" secondAttribute="bottom" constant="503" id="fKV-5D-Ibv"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="top" secondItem="zS7-mG-mXg" secondAttribute="top" constant="128" id="gwc-aQ-4VD"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="leading" secondItem="zS7-mG-mXg" secondAttribute="leading" id="h6F-ya-lJQ"/>
-                            <constraint firstAttribute="trailing" secondItem="5BR-1f-f8b" secondAttribute="trailing" id="mni-PM-Wb2"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="trailing" secondItem="bZV-bq-aY0" secondAttribute="trailing" id="rr5-VN-0B6"/>
-                            <constraint firstItem="5BR-1f-f8b" firstAttribute="top" secondItem="zS7-mG-mXg" secondAttribute="top" constant="128" id="ts1-pA-Wiy"/>
-                            <constraint firstAttribute="trailing" secondItem="5BR-1f-f8b" secondAttribute="trailing" id="vGr-Ie-fwE"/>
+                            <constraint firstItem="1P2-BE-Nov" firstAttribute="width" secondItem="zS7-mG-mXg" secondAttribute="width" multiplier="0.5" id="hdg-iK-bzx"/>
+                            <constraint firstItem="1P2-BE-Nov" firstAttribute="leading" secondItem="3w7-7Z-G0o" secondAttribute="leading" id="rNS-ye-XEW"/>
+                            <constraint firstItem="1P2-BE-Nov" firstAttribute="trailing" secondItem="3w7-7Z-G0o" secondAttribute="trailing" multiplier="0.5" id="znq-Zf-cwP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3w7-7Z-G0o"/>
                     </view>
@@ -114,11 +101,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ShopsCollectionViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="US7-qU-NSv">
-                                <rect key="frame" x="0.0" y="400" width="414" height="336"/>
+                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MWM-Ty-XyR">
                                     <size key="itemSize" width="317" height="50"/>
@@ -128,7 +115,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="Eig-do-2Ya" customClass="ShopCell" customModule="MadridShops" customModuleProvider="target">
-                                        <rect key="frame" x="48.666666666666664" y="0.0" width="317" height="50"/>
+                                        <rect key="frame" x="29" y="0.0" width="317" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="317" height="50"/>
@@ -156,7 +143,7 @@
                                 </cells>
                             </collectionView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D8W-pg-BQ0">
-                                <rect key="frame" x="0.0" y="64" width="414" height="336"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -186,31 +173,69 @@
             <objects>
                 <viewController id="tk4-PC-kqZ" customClass="ShopDetailViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rsr-eH-gpi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-bB-YtA">
-                                <rect key="frame" x="0.0" y="64" width="414" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deA-ge-H6S">
-                                <rect key="frame" x="0.0" y="517" width="414" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NFe-Uv-Pmq">
-                                <rect key="frame" x="20" y="278" width="374" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem fistrum diodeno por la gloria de mi madre sexuarl no puedor al ataquerl ese que llega qué dise usteer por la gloria de mi madre quietooor. Ese que llega hasta luego Lucas al ataquerl qué dise usteer. Al ataquerl de la pradera caballo blanco caballo negroorl amatomaa qué dise usteer por la gloria de mi madre está la cosa muy malar a wan está la cosa muy malar sexuarl. Papaar papaar torpedo ese pedazo de ese que llega. Hasta luego Lucas ahorarr te va a hasé pupitaa está la cosa muy malar ese hombree quietooor. Mamaar ese hombree qué dise usteer de la pradera condemor pecador. Quietooor llevame al sircoo mamaar me cago en tus muelas llevame al sircoo no te digo trigo por no llamarte Rodrigor ese hombree no puedor papaar papaar.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APa-bV-DH4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c58-ZT-BYC" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-bB-YtA">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NFe-Uv-Pmq">
+                                                <rect key="frame" x="0.0" y="143" width="375" height="197"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">Lorem fistrum diodeno por la gloria de mi madre sexuarl no puedor al ataquerl ese que llega qué dise usteer por la gloria de mi madre quietooor. Ese que llega hasta luego Lucas al ataquerl qué dise usteer. Al ataquerl de la pradera caballo blanco caballo negroorl amatomaa qué dise usteer por la gloria de mi madre está la cosa muy malar a wan está la cosa muy malar sexuarl. Papaar papaar torpedo ese pedazo de ese que llega. Hasta luego Lucas ahorarr te va a hasé pupitaa está la cosa muy malar ese hombree quietooor. Mamaar ese hombree qué dise usteer de la pradera condemor pecador. Quietooor llevame al sircoo mamaar me cago en tus muelas llevame al sircoo no te digo trigo por no llamarte Rodrigor ese hombree no puedor papaar papaar.
 
 Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Benemeritaar se calle ustée va usté muy cargadoo qué dise usteer por la gloria de mi madre no puedor. Pupita va usté muy cargadoo fistro quietooor la caidita mamaar se calle ustée sexuarl te va a hasé pupitaa fistro está la cosa muy malar. Te va a hasé pupitaa diodeno diodenoo ese pedazo de se calle ustée te va a hasé pupitaa amatomaa a wan ese que llega llevame al sircoo llevame al sircoo. Ese hombree pecador por la gloria de mi madre ese pedazo de tiene musho peligro sexuarl.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deA-ge-H6S">
+                                                <rect key="frame" x="0.0" y="413" width="375" height="190"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="uC4-bB-YtA" firstAttribute="leading" secondItem="c58-ZT-BYC" secondAttribute="leading" id="8ct-Dg-HGG"/>
+                                            <constraint firstItem="deA-ge-H6S" firstAttribute="height" secondItem="c58-ZT-BYC" secondAttribute="height" multiplier="0.25" id="Ag6-YX-4tV"/>
+                                            <constraint firstItem="deA-ge-H6S" firstAttribute="trailing" secondItem="c58-ZT-BYC" secondAttribute="trailing" id="Cbx-ex-9vH"/>
+                                            <constraint firstItem="deA-ge-H6S" firstAttribute="bottom" secondItem="c58-ZT-BYC" secondAttribute="bottom" id="GKs-ki-QfW"/>
+                                            <constraint firstItem="NFe-Uv-Pmq" firstAttribute="top" secondItem="uC4-bB-YtA" secondAttribute="bottom" id="LNB-Lq-PUD"/>
+                                            <constraint firstItem="NFe-Uv-Pmq" firstAttribute="height" secondItem="c58-ZT-BYC" secondAttribute="height" multiplier="0.4" id="MBl-qq-G3i"/>
+                                            <constraint firstItem="NFe-Uv-Pmq" firstAttribute="leading" secondItem="c58-ZT-BYC" secondAttribute="leading" id="bjS-ef-UoW"/>
+                                            <constraint firstItem="uC4-bB-YtA" firstAttribute="height" secondItem="c58-ZT-BYC" secondAttribute="height" multiplier="0.25" id="grb-8q-Xk5"/>
+                                            <constraint firstItem="deA-ge-H6S" firstAttribute="leading" secondItem="c58-ZT-BYC" secondAttribute="leading" id="rWC-u4-zbm"/>
+                                            <constraint firstItem="uC4-bB-YtA" firstAttribute="trailing" secondItem="c58-ZT-BYC" secondAttribute="trailing" id="reR-yL-fMQ"/>
+                                            <constraint firstItem="uC4-bB-YtA" firstAttribute="top" secondItem="c58-ZT-BYC" secondAttribute="top" constant="20" symbolic="YES" id="t7f-hD-4Dn"/>
+                                            <constraint firstItem="NFe-Uv-Pmq" firstAttribute="trailing" secondItem="c58-ZT-BYC" secondAttribute="trailing" id="xnl-gh-DZE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="c58-ZT-BYC" firstAttribute="leading" secondItem="APa-bV-DH4" secondAttribute="leading" id="3oN-rh-yhQ"/>
+                                    <constraint firstItem="c58-ZT-BYC" firstAttribute="bottom" secondItem="APa-bV-DH4" secondAttribute="bottom" id="HBY-rw-dMG"/>
+                                    <constraint firstItem="c58-ZT-BYC" firstAttribute="top" secondItem="APa-bV-DH4" secondAttribute="top" id="LRk-X5-Ujh"/>
+                                    <constraint firstItem="c58-ZT-BYC" firstAttribute="trailing" secondItem="APa-bV-DH4" secondAttribute="trailing" id="y8o-hl-IPu"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c58-ZT-BYC" firstAttribute="centerY" secondItem="UuT-uZ-6QW" secondAttribute="centerY" id="74G-KZ-vAq"/>
+                            <constraint firstItem="APa-bV-DH4" firstAttribute="top" secondItem="UuT-uZ-6QW" secondAttribute="top" id="7G3-KZ-ebL"/>
+                            <constraint firstItem="APa-bV-DH4" firstAttribute="bottom" secondItem="rsr-eH-gpi" secondAttribute="bottom" id="Mi3-gd-Ugj"/>
+                            <constraint firstItem="APa-bV-DH4" firstAttribute="leading" secondItem="UuT-uZ-6QW" secondAttribute="leading" id="Rfs-kk-pU7"/>
+                            <constraint firstItem="c58-ZT-BYC" firstAttribute="centerX" secondItem="UuT-uZ-6QW" secondAttribute="centerX" id="SXT-Nz-dcB"/>
+                            <constraint firstItem="APa-bV-DH4" firstAttribute="trailing" secondItem="UuT-uZ-6QW" secondAttribute="trailing" id="YCm-aR-IhZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UuT-uZ-6QW"/>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="shopDescription" destination="NFe-Uv-Pmq" id="a9c-M1-APp"/>
                         <outlet property="shopImage" destination="uC4-bB-YtA" id="HPz-ZM-NCS"/>
@@ -219,18 +244,18 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91M-kZ-uAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="-335"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="-335.08245877061472"/>
         </scene>
         <!--Activities-->
         <scene sceneID="5qs-fb-9Dy">
             <objects>
                 <viewController id="ezB-hY-M2e" customClass="ActivitiesCollectionViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zik-do-u34">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bbY-1y-eHO">
-                                <rect key="frame" x="0.0" y="400" width="414" height="336"/>
+                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c8k-Mz-OzZ">
                                     <size key="itemSize" width="350" height="50"/>
@@ -240,7 +265,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCell" id="eGd-gk-EP3" customClass="ActivityCell" customModule="MadridShops" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="0.0" width="350" height="50"/>
+                                        <rect key="frame" x="12.5" y="0.0" width="350" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
@@ -268,7 +293,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                 </cells>
                             </collectionView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-Zf-7Rl">
-                                <rect key="frame" x="0.0" y="64" width="414" height="336"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,29 +323,65 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
             <objects>
                 <viewController id="bwZ-ie-qT4" customClass="ActivityDetailViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WbR-Y3-Z4p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Sc-Fcr">
-                                <rect key="frame" x="20" y="307" width="374" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem fistrum papaar papaar te voy a borrar el cerito por la gloria de mi madre diodenoo llevame al sircoo apetecan mamaar qué dise usteer no te digo trigo por no llamarte Rodrigor. Condemor papaar papaar no te digo trigo por no llamarte Rodrigor a peich ese pedazo de a gramenawer diodenoo caballo blanco caballo negroorl la caidita caballo blanco caballo negroorl apetecan. Te voy a borrar el cerito papaar papaar mamaar por la gloria de mi madre. Pupita benemeritaar pupita llevame al sircoo jarl no puedor va usté muy cargadoo a gramenawer. Ese hombree a wan jarl ahorarr amatomaa está la cosa muy malar torpedo. De la pradera ese pedazo de de la pradera llevame al sircoo está la cosa muy malar a wan no puedor ese hombree. Benemeritaar diodeno se calle ustée ahorarr.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bds-SM-sIN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-D6-vNn" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Sc-Fcr">
+                                                <rect key="frame" x="0.0" y="167" width="375" height="266"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">Lorem fistrum papaar papaar te voy a borrar el cerito por la gloria de mi madre diodenoo llevame al sircoo apetecan mamaar qué dise usteer no te digo trigo por no llamarte Rodrigor. Condemor papaar papaar no te digo trigo por no llamarte Rodrigor a peich ese pedazo de a gramenawer diodenoo caballo blanco caballo negroorl la caidita caballo blanco caballo negroorl apetecan. Te voy a borrar el cerito papaar papaar mamaar por la gloria de mi madre. Pupita benemeritaar pupita llevame al sircoo jarl no puedor va usté muy cargadoo a gramenawer. Ese hombree a wan jarl ahorarr amatomaa está la cosa muy malar torpedo. De la pradera ese pedazo de de la pradera llevame al sircoo está la cosa muy malar a wan no puedor ese hombree. Benemeritaar diodeno se calle ustée ahorarr.
 
 Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl apetecan diodeno caballo blanco caballo negroorl me cago en tus muelas. Pecador fistro te va a hasé pupitaa sexuarl te va a hasé pupitaa. Benemeritaar por la gloria de mi madre está la cosa muy malar pupita ahorarr llevame al sircoo jarl sexuarl jarl se calle ustée ese que llega. Quietooor va usté muy cargadoo pupita se calle ustée qué dise usteer hasta luego Lucas hasta luego Lucas papaar papaar papaar papaar ese hombree.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-tg-90p">
-                                <rect key="frame" x="0.0" y="64" width="414" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-pL-nln">
-                                <rect key="frame" x="0.0" y="582" width="414" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-tg-90p">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-pL-nln">
+                                                <rect key="frame" x="0.0" y="456" width="375" height="148"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="EFe-tg-90p" firstAttribute="leading" secondItem="J6Z-D6-vNn" secondAttribute="leading" id="8Re-IG-MA7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mgp-pL-nln" secondAttribute="trailing" id="8f9-4p-4s2"/>
+                                            <constraint firstItem="EFe-tg-90p" firstAttribute="height" secondItem="J6Z-D6-vNn" secondAttribute="height" multiplier="0.25" id="KL2-1S-Nju"/>
+                                            <constraint firstAttribute="trailing" secondItem="EFe-tg-90p" secondAttribute="trailing" id="Mhr-eU-CCI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mgp-pL-nln" secondAttribute="bottom" id="Sfx-82-TL6"/>
+                                            <constraint firstItem="Mgp-pL-nln" firstAttribute="leading" secondItem="J6Z-D6-vNn" secondAttribute="leading" id="TiQ-qW-D8j"/>
+                                            <constraint firstItem="1sg-Sc-Fcr" firstAttribute="height" secondItem="J6Z-D6-vNn" secondAttribute="height" multiplier="0.4" id="VrM-EN-l5h"/>
+                                            <constraint firstAttribute="trailing" secondItem="1sg-Sc-Fcr" secondAttribute="trailing" id="abI-36-KSq"/>
+                                            <constraint firstItem="Mgp-pL-nln" firstAttribute="height" secondItem="J6Z-D6-vNn" secondAttribute="height" multiplier="0.25" id="bwf-kb-baQ"/>
+                                            <constraint firstItem="EFe-tg-90p" firstAttribute="top" secondItem="J6Z-D6-vNn" secondAttribute="top" id="cSH-zx-fyz"/>
+                                            <constraint firstItem="1sg-Sc-Fcr" firstAttribute="top" secondItem="EFe-tg-90p" secondAttribute="bottom" id="jC3-gd-H2u"/>
+                                            <constraint firstItem="1sg-Sc-Fcr" firstAttribute="leading" secondItem="J6Z-D6-vNn" secondAttribute="leading" id="zPD-86-eBI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="J6Z-D6-vNn" secondAttribute="bottom" id="Ddw-VI-mbs"/>
+                                    <constraint firstItem="J6Z-D6-vNn" firstAttribute="top" secondItem="bds-SM-sIN" secondAttribute="top" id="W8O-aa-U7j"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6Z-D6-vNn" secondAttribute="trailing" id="cOd-Ca-eRa"/>
+                                    <constraint firstItem="J6Z-D6-vNn" firstAttribute="leading" secondItem="bds-SM-sIN" secondAttribute="leading" id="yhp-uC-N0W"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bds-SM-sIN" firstAttribute="trailing" secondItem="Uw5-8d-6p2" secondAttribute="trailing" id="Epc-fb-UUi"/>
+                            <constraint firstItem="J6Z-D6-vNn" firstAttribute="width" secondItem="WbR-Y3-Z4p" secondAttribute="width" id="Gr9-Ew-iWY"/>
+                            <constraint firstItem="bds-SM-sIN" firstAttribute="bottom" secondItem="Uw5-8d-6p2" secondAttribute="bottom" id="O5L-Qz-dzT"/>
+                            <constraint firstItem="J6Z-D6-vNn" firstAttribute="height" secondItem="WbR-Y3-Z4p" secondAttribute="height" priority="250" id="Zyk-Of-KnN"/>
+                            <constraint firstItem="bds-SM-sIN" firstAttribute="leading" secondItem="Uw5-8d-6p2" secondAttribute="leading" id="bMK-hP-6bC"/>
+                            <constraint firstItem="bds-SM-sIN" firstAttribute="top" secondItem="WbR-Y3-Z4p" secondAttribute="top" id="u8a-9Z-nfB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uw5-8d-6p2"/>
                     </view>
                     <connections>
@@ -331,7 +392,7 @@ Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl ap
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJf-uc-jBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="553"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="553.67316341829087"/>
         </scene>
     </scenes>
     <resources>
