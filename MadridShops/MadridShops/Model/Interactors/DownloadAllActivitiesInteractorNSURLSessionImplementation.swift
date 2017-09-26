@@ -15,7 +15,7 @@ class DownloadAllActivitiesInteractorNSURLSessionImplementation: DownloadAllActi
     
     func execute(onSuccess: @escaping (Activities) -> Void, onError: errorClosure) {
         let session = URLSession.shared
-        if let url = URL(string: activitiesURL) {
+        if let url = URL(string: ACTIVITIES_URL) {
             let task = session.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
                 
                 OperationQueue.main.addOperation {

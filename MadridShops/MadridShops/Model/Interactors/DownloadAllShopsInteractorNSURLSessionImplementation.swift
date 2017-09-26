@@ -15,7 +15,7 @@ class DownloadAllShopsInteractorNSURLSessionImplementation: DownloadAllShopsInte
     
     func execute(onSuccess: @escaping (Shops) -> Void, onError: errorClosure) {
         let session = URLSession.shared
-        if let url = URL(string: shopsURL) {
+        if let url = URL(string: SHOPS_URL) {
             let task = session.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
                 
                 OperationQueue.main.addOperation {

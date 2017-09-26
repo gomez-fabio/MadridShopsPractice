@@ -8,5 +8,6 @@
 
 import Foundation
 
-let shopsURL : String = "https://madrid-shops.com/json_new/getShops.php"
-let activitiesURL : String = "https://madrid-shops.com/json_new/getActivities.php"
+let SHOPS_URL : String = "https://madrid-shops.com/json_new/getShops.php"
+let ACTIVITIES_URL : String = "https://madrid-shops.com/json_new/getActivities.php"
+let DATABASE_NAME : String = "MadridShops"

@@ -21,6 +21,9 @@
 		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
 		E55F60581F76F8AB008A670B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E55F60571F76F8AB008A670B /* Podfile */; };
 		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
+		E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BD7B801F79A08F00821562 /* CoreData.framework */; };
+		E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */; };
+		E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B851F79A80C00821562 /* CoreDataStack.swift */; };
 		E5F3B00D1F771F4C008F5EBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */; };
 		E5F3B00F1F77AD88008F5EBB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00E1F77AD88008F5EBB /* Activity.swift */; };
 		E5F3B0111F77B5A7008F5EBB /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0101F77B5A7008F5EBB /* Activities.swift */; };
@@ -66,6 +69,9 @@
 		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
 		E55F60571F76F8AB008A670B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E5BD7B801F79A08F00821562 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridShops.xcdatamodel; sourceTree = "<group>"; };
+		E5BD7B851F79A80C00821562 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5F3B00E1F77AD88008F5EBB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E5F3B0101F77B5A7008F5EBB /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */,
 				E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +196,7 @@
 				E546F6B91F765F39007E9C9F /* Shops.swift */,
 				E5F3B00E1F77AD88008F5EBB /* Activity.swift */,
 				E5F3B0101F77B5A7008F5EBB /* Activities.swift */,
+				E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 		E56A78FA1F76E56C00008775 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5BD7B801F79A08F00821562 /* CoreData.framework */,
 				E56A78FB1F76E56C00008775 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -212,6 +221,7 @@
 		E5F3B02D1F78386A008F5EBB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E5BD7B851F79A80C00821562 /* CoreDataStack.swift */,
 				E532C3B41F769204004F3930 /* TypeAlias.swift */,
 				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
 				E5F3B02E1F7838E0008F5EBB /* String+Image.swift */,
@@ -331,6 +341,7 @@
 				E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */,
 				E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */,
 				E5F3B0221F78141A008F5EBB /* JSONParser.swift in Sources */,
+				E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */,
 				E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */,
 				E5F3B0261F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift in Sources */,
 				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
@@ -342,6 +353,7 @@
 				E5F3B0241F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift in Sources */,
 				E5F3B02F1F7838E0008F5EBB /* String+Image.swift in Sources */,
 				E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */,
+				E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */,
 				E5F3B0151F77BA73008F5EBB /* ActivitiesCollectionViewController.swift in Sources */,
 				E5F3B02A1F782C42008F5EBB /* ShopDetailViewController.swift in Sources */,
 				E5F3B0171F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift in Sources */,
@@ -593,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */,
+			);
+			currentVersion = E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */;
+			path = MadridShops.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E546F6891F75D58C007E9C9F /* Project object */;
 }
