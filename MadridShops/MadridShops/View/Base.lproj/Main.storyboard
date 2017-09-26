@@ -34,7 +34,7 @@
         <!--!MAD¡-->
         <scene sceneID="9Hc-on-sQz">
             <objects>
-                <viewController id="wGH-tF-GG4" sceneMemberID="viewController">
+                <viewController id="wGH-tF-GG4" customClass="MainViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zS7-mG-mXg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ezB-hY-M2e" kind="show" id="d3D-Dy-hDZ"/>
+                                    <segue destination="ezB-hY-M2e" kind="show" identifier="ShowActivitiesSegue" id="d3D-Dy-hDZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P2-BE-Nov">
@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ohg-yA-r1B"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsSegue" id="ohg-yA-r1B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,12 +82,12 @@
                     <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO">
                         <barButtonItem key="leftBarButtonItem" systemItem="play" id="HVF-Bu-jYS">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="CRm-8C-cV4"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsBarSegue" id="CRm-8C-cV4"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="GCZ-SC-VQc">
                             <connections>
-                                <segue destination="ezB-hY-M2e" kind="show" id="YUI-cq-mlS"/>
+                                <segue destination="ezB-hY-M2e" kind="show" identifier="ShowActivitiesBarSegue" id="YUI-cq-mlS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -399,7 +399,7 @@ Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl ap
         <image name="madrid" width="736" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d3D-Dy-hDZ"/>
+        <segue reference="YUI-cq-mlS"/>
         <segue reference="CRm-8C-cV4"/>
     </inferredMetricsTieBreakers>
 </document>

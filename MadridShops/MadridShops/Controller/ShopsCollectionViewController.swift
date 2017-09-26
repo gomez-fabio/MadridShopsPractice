@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class ShopsCollectionViewController: UIViewController {
-
+    
+    var context: NSManagedObjectContext!
     var shops: Shops?
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
@@ -26,6 +28,11 @@ class ShopsCollectionViewController: UIViewController {
             self.shops = shops
             self.shopsCollectionView.delegate = self
             self.shopsCollectionView.dataSource = self
+            
+            let cacheInteractor = SaveAllShopsInteractorImplementation()
+            cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
+
+            })
         })
         
     }

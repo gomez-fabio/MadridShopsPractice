@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.context = cds.createContainer(dbname: DATABASE_NAME).viewContext
         
-        let shop = ShopCD(context: self.context!)
-        shop.name = "Test"
-        self.cds.saveContext(context: self.context!)
+        let nav = self.window?.rootViewController as! UINavigationController
+        let mainVC = nav.topViewController as! MainViewController
+        mainVC.context = self.context
         
         return true
     }
