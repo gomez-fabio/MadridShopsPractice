@@ -16,17 +16,8 @@ class SaveAllActivitiesInteractorImplementation: SaveAllActivitiesInteractor {
     func execute(activities: Activities, context: NSManagedObjectContext, onSuccess: @escaping (Activities) -> Void, onError: errorClosure) {
         for i in 0 ..< activities.count() {
             let activity = activities.get(index: i)
-            let activityCD = ActivityCD(context: context)
-            activityCD.name = activity.name
-            activityCD.desc = activity.description_en
-            activityCD.latitude = activity.latitude!
-            activityCD.longitude = activity.longitude!
-            activityCD.image  = activity.image
-            activityCD.logo = activity.logo
-            activityCD.openingHours = activity.openingHours_en
-            activityCD.address = activity.address
-            activityCD.telephone = activity.telephone
-            activityCD.url = activity.url
+            
+            let _ = mapActivityIntoActivityCD(context: context, activity: activity)
         }
         do{
             try context.save()

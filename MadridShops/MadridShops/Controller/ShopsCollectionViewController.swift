@@ -25,24 +25,30 @@ class ShopsCollectionViewController: UIViewController {
         let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImplementation()
         
         downloadShopsInteractor.execute(onSuccess: { (shops:Shops) in
+            let cacheInteractor = SaveAllShopsInteractorImplementation()
+            
             self.shops = shops
+            
             self.shopsCollectionView.delegate = self
             self.shopsCollectionView.dataSource = self
-            
-            let cacheInteractor = SaveAllShopsInteractorImplementation()
             cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
 
             })
         })
         
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let shop = self.shops?.get(index: indexPath.row)
+        self.performSegue(withIdentifier: "showShopDetailSegue", sender: shop)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showShopDetailSegue" {
             let vc = segue.destination as! ShopDetailViewController
-            let indexPath = self.shopsCollectionView.indexPathsForSelectedItems![0]
-            let shop = self.shops?.get(index: indexPath.row)
-            vc.shop = shop
+//            let indexPath = self.shopsCollectionView.indexPathsForSelectedItems![0]
+//            let shop = self.shops?.get(index: indexPath.row)
+            vc.shop = sender as! Shop
         }
     }
 
@@ -50,5 +56,34 @@ class ShopsCollectionViewController: UIViewController {
         super.viewDidLayoutSubviews()
         shopsCollectionView.reloadData()
     }
+
+    // MARK: - Fetched results controller
+    //**** TODO REFACTORIZAR FETCH RESULT CONT A UNA CLASE GENERICA
+    var _fetchedResultsController: NSFetchedResultsController<ShopCD>? = nil
+    
+    var fetchedResultsController: NSFetchedResultsController<ShopCD> {
+        if _fetchedResultsController != nil {
+            return _fetchedResultsController!
+        }
+        
+        let fetchRequest: NSFetchRequest<ShopCD> = ShopCD.fetchRequest()
+        
+        fetchRequest.fetchBatchSize = 20
+        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ShopsCacheFile")
+        //aFetchedResultsController.delegate = self
+        
+        do {
+            try _fetchedResultsController!.performFetch()
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+        
+        return _fetchedResultsController!
+    }
+    
 }
 
