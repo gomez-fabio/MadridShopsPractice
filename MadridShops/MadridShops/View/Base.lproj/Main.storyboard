@@ -62,9 +62,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsSegue" id="ohg-yA-r1B"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="f9R-0q-4Ad">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="f9R-0q-4Ad" firstAttribute="centerY" secondItem="3w7-7Z-G0o" secondAttribute="centerY" id="2nn-Ef-fcO"/>
+                            <constraint firstItem="f9R-0q-4Ad" firstAttribute="centerX" secondItem="3w7-7Z-G0o" secondAttribute="centerX" id="4EN-1A-db7"/>
                             <constraint firstItem="1P2-BE-Nov" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="7Ch-b6-05o"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="bottom" secondItem="bZV-bq-aY0" secondAttribute="bottom" id="7hG-Bo-FJg"/>
                             <constraint firstItem="PWe-tG-BnF" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="CUO-BP-pey"/>
@@ -80,6 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="3w7-7Z-G0o"/>
                     </view>
                     <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO"/>
+                    <connections>
+                        <outlet property="activityButton" destination="PWe-tG-BnF" id="NcQ-6S-QV9"/>
+                        <outlet property="activityIndicator" destination="f9R-0q-4Ad" id="j6K-nP-sJR"/>
+                        <outlet property="shopButton" destination="1P2-BE-Nov" id="00z-P0-DGG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbp-Qm-glb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
