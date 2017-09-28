@@ -79,18 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3w7-7Z-G0o"/>
                     </view>
-                    <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="HVF-Bu-jYS">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsBarSegue" id="CRm-8C-cV4"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="GCZ-SC-VQc">
-                            <connections>
-                                <segue destination="ezB-hY-M2e" kind="show" identifier="ShowActivitiesBarSegue" id="YUI-cq-mlS"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbp-Qm-glb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,7 +150,7 @@
                     <navigationItem key="navigationItem" title="Shops" id="kfX-Di-H6t"/>
                     <connections>
                         <outlet property="shopsCollectionView" destination="US7-qU-NSv" id="o44-eQ-ujY"/>
-                        <segue destination="tk4-PC-kqZ" kind="show" identifier="showShopDetailSegue" id="XIm-kW-N1U"/>
+                        <segue destination="tk4-PC-kqZ" kind="show" identifier="ShowShopDetailSegue" id="XIm-kW-N1U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -311,7 +300,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                     <navigationItem key="navigationItem" title="Activities" id="5sg-Qw-1f3"/>
                     <connections>
                         <outlet property="activitiesCollectionView" destination="bbY-1y-eHO" id="BQe-7e-KkL"/>
-                        <segue destination="bwZ-ie-qT4" kind="show" identifier="showActivityDetailSegue" id="NBE-4r-TYz"/>
+                        <segue destination="bwZ-ie-qT4" kind="show" identifier="ShowActivityDetailSegue" id="NBE-4r-TYz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWR-W5-pNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -398,8 +387,4 @@ Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl ap
     <resources>
         <image name="madrid" width="750" height="1334"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="YUI-cq-mlS"/>
-        <segue reference="CRm-8C-cV4"/>
-    </inferredMetricsTieBreakers>
 </document>

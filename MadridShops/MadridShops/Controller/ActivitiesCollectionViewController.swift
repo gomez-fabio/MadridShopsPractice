@@ -12,7 +12,6 @@ import CoreData
 class ActivitiesCollectionViewController: UIViewController {
     
     var context: NSManagedObjectContext!
-    var activities: Activities?
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
     let kInset : CGFloat = 10
@@ -22,32 +21,22 @@ class ActivitiesCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadActivitiesInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSURLSessionImplementation()
-        
-        downloadActivitiesInteractor.execute(onSuccess: { (activities:Activities) in
-            self.activities = activities
             self.activitiesCollectionView.delegate = self
             self.activitiesCollectionView.dataSource = self
-            
-            let cacheInteractor = SaveAllActivitiesInteractorImplementation()
-            cacheInteractor.execute(activities: activities, context: self.context, onSuccess: { (activities: Activities) in
-
-            })
-        })
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let activity = self.activities?.get(index: indexPath.row)
-        self.performSegue(withIdentifier: "showActivityDetailSegue", sender: activity)
+        let activity: ActivityCD = self.fetchedResultsController.object(at: indexPath)
+        
+        self.performSegue(withIdentifier: "ShowActivityDetailSegue", sender: activity)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showActivityDetailSegue" {
+        if segue.identifier == "ShowActivityDetailSegue" {
             let vc = segue.destination as! ActivityDetailViewController
-//            let indexPath = self.activitiesCollectionView.indexPathsForSelectedItems![0]
-//            let activity = self.activities?.get(index: indexPath.row)
-            vc.activity = sender as! Activity
+            let activityCD: ActivityCD = sender as! ActivityCD
+            
+            vc.activity = mapActivityCDIntoActivity(activityCD: activityCD)
         }
     }
     
@@ -72,7 +61,6 @@ class ActivitiesCollectionViewController: UIViewController {
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
         _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ActivitiesCacheFile")
-        //aFetchedResultsController.delegate = self
         
         do {
             try _fetchedResultsController!.performFetch()

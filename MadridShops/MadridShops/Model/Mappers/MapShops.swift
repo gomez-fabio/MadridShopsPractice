@@ -12,7 +12,7 @@ import CoreData
 func mapShopCDIntoShop(shopCD: ShopCD) -> Shop{
     
     let shop = Shop(name: shopCD.name!)
-    shop.description_en = shopCD.description
+    shop.description_en = shopCD.desc!
     shop.latitude = shopCD.latitude
     shop.longitude = shopCD.longitude
     shop.image  = shopCD.image ?? ""

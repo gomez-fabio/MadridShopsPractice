@@ -32,6 +32,8 @@
 		E5BD7B941F7C357D00821562 /* MapActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B931F7C357D00821562 /* MapActivities.swift */; };
 		E5CE1C321F7C6C81006A863D /* ExecuteOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */; };
 		E5CE1C341F7C6D1D006A863D /* SetExecutedOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */; };
+		E5CE1C361F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */; };
+		E5CE1C381F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */; };
 		E5F3B00D1F771F4C008F5EBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */; };
 		E5F3B00F1F77AD88008F5EBB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00E1F77AD88008F5EBB /* Activity.swift */; };
 		E5F3B0111F77B5A7008F5EBB /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0101F77B5A7008F5EBB /* Activities.swift */; };
@@ -88,6 +90,8 @@
 		E5BD7B931F7C357D00821562 /* MapActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActivities.swift; sourceTree = "<group>"; };
 		E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractor.swift; sourceTree = "<group>"; };
 		E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractor.swift; sourceTree = "<group>"; };
+		E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractorimplementation.swift; sourceTree = "<group>"; };
+		E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImplementation.swift; sourceTree = "<group>"; };
 		E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5F3B00E1F77AD88008F5EBB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E5F3B0101F77B5A7008F5EBB /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				E5F3B0251F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift */,
 				E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */,
 				E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */,
+				E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */,
+				E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
 				E5BD7B921F7C237000821562 /* MapShops.swift in Sources */,
 				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
+				E5CE1C361F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift in Sources */,
+				E5CE1C381F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift in Sources */,
 				E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */,
 				E5F3B0131F77BA02008F5EBB /* ActivityCell.swift in Sources */,
 				E5F3B02C1F782C66008F5EBB /* ActivityDetailViewController.swift in Sources */,

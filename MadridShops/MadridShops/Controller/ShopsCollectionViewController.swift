@@ -12,7 +12,6 @@ import CoreData
 class ShopsCollectionViewController: UIViewController {
     
     var context: NSManagedObjectContext!
-    var shops: Shops?
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
     let kInset : CGFloat = 10
@@ -22,33 +21,22 @@ class ShopsCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImplementation()
-        
-        downloadShopsInteractor.execute(onSuccess: { (shops:Shops) in
-            let cacheInteractor = SaveAllShopsInteractorImplementation()
-            
-            self.shops = shops
-            
-            self.shopsCollectionView.delegate = self
-            self.shopsCollectionView.dataSource = self
-            cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
-
-            })
-        })
-        
+        self.shopsCollectionView.delegate = self
+        self.shopsCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let shop = self.shops?.get(index: indexPath.row)
-        self.performSegue(withIdentifier: "showShopDetailSegue", sender: shop)
+        let shop: ShopCD = self.fetchedResultsController.object(at: indexPath)
+        
+        self.performSegue(withIdentifier: "ShowShopDetailSegue", sender: shop)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showShopDetailSegue" {
+        if segue.identifier == "ShowShopDetailSegue" {
             let vc = segue.destination as! ShopDetailViewController
-//            let indexPath = self.shopsCollectionView.indexPathsForSelectedItems![0]
-//            let shop = self.shops?.get(index: indexPath.row)
-            vc.shop = sender as! Shop
+            let shopCD: ShopCD = sender as! ShopCD
+
+            vc.shop = mapShopCDIntoShop(shopCD: shopCD)
         }
     }
 
@@ -73,7 +61,6 @@ class ShopsCollectionViewController: UIViewController {
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
         _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "ShopsCacheFile")
-        //aFetchedResultsController.delegate = self
         
         do {
             try _fetchedResultsController!.performFetch()
