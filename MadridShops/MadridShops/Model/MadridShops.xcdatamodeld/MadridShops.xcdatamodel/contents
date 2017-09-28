@@ -4,10 +4,12 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logoBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="map" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mapBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="openingHours" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
@@ -17,17 +19,19 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logoBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="map" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mapBin" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="openingHours" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ActivityCD" positionX="-54" positionY="-9" width="128" height="210"/>
-        <element name="ShopCD" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="ActivityCD" positionX="-54" positionY="-9" width="128" height="240"/>
+        <element name="ShopCD" positionX="-63" positionY="-18" width="128" height="240"/>
     </elements>
 </model>
