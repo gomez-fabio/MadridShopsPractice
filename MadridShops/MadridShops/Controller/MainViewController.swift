@@ -14,28 +14,41 @@ class MainViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var shopButton: UIButton!
     @IBOutlet weak var activityButton: UIButton!
+    @IBOutlet weak var reloadButton: UIBarButtonItem!
+    
+    @IBAction func hitReload(_ sender: Any) {self.startMeUp()}
     
     var context: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activityIndicator.isHidden = true
-        shopButton.isHidden = false
-        activityButton.isHidden = false
-
-        // TODO POD TO SHOW PROGRESS...
-        ExecuteOnceInteractorImplementation().execute(closure:{
-            initializeShopsData()
-        } )
+        self.activityIndicator.isHidden = true
+        self.reloadButton.isEnabled = false
+        self.startMeUp()
+    }
     
+        func startMeUp() {
+            // TODO POD TO SHOW PROGRESS...
+            ExecuteOnceInteractorImplementation().execute(closure:{
+                if isConnectedToNetwork() == true {
+                    self.activityIndicator.isHidden = false
+                    self.activityIndicator.startAnimating()
+                    self.shopButton.isHidden = true
+                    self.activityButton.isHidden = true
+                    self.reloadButton.isEnabled = false
+                    self.initializeShopsData()
+                } else {
+                    self.activityIndicator.isHidden = true
+                    self.shopButton.isHidden = true
+                    self.activityButton.isHidden = true
+                    self.reloadButton.isEnabled = true
+                    self.alertMessage()
+                }
+            } )
+        }
         
         func initializeShopsData() {
-            
-            activityIndicator.isHidden = false
-            activityIndicator.startAnimating()
-            shopButton.isHidden = true
-            activityButton.isHidden = true
             
             let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImplementation()
             
@@ -43,11 +56,25 @@ class MainViewController: UIViewController {
                 let cacheInteractor = SaveAllShopsInteractorImplementation()
                 
                 cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops) in
-                    initializeActivitiesData()
+                    self.initializeActivitiesData()
                 })
             })
         }
-        
+    
+        func alertMessage() {
+            let alert = UIAlertController(title: "Looks like a problem to me",
+                                          message: "It seems there is no active connection to the internet",
+                                          preferredStyle: .alert)
+            let retryAction = UIAlertAction(title: "Retry", style: .default, handler: { (action) -> Void in
+                self.startMeUp()
+            })
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
+            alert.addAction(retryAction)
+            alert.addAction(cancelAction)
+            present(alert, animated: true, completion: nil)
+        }
+    
         func initializeActivitiesData() {
             let downloadActivitiesInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSURLSessionImplementation()
             
@@ -63,7 +90,7 @@ class MainViewController: UIViewController {
                 })
             })
         }
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowShopsSegue" {

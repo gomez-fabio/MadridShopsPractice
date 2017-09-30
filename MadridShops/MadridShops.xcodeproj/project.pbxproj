@@ -21,6 +21,7 @@
 		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
 		E55F60581F76F8AB008A670B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E55F60571F76F8AB008A670B /* Podfile */; };
 		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
+		E57E79091F7F108B0099FB2B /* CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E79081F7F108B0099FB2B /* CheckConnection.swift */; };
 		E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BD7B801F79A08F00821562 /* CoreData.framework */; };
 		E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */; };
 		E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B851F79A80C00821562 /* CoreDataStack.swift */; };
@@ -79,6 +80,7 @@
 		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
 		E55F60571F76F8AB008A670B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E57E79081F7F108B0099FB2B /* CheckConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
 		E5BD7B801F79A08F00821562 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridShops.xcdatamodel; sourceTree = "<group>"; };
 		E5BD7B851F79A80C00821562 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				E532C3B41F769204004F3930 /* TypeAlias.swift */,
 				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
 				E5F3B02E1F7838E0008F5EBB /* String+Image.swift */,
+				E57E79081F7F108B0099FB2B /* CheckConnection.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				E5BD7B8F1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift in Sources */,
 				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
 				E5BD7B921F7C237000821562 /* MapShops.swift in Sources */,
+				E57E79091F7F108B0099FB2B /* CheckConnection.swift in Sources */,
 				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
 				E5CE1C361F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift in Sources */,
 				E5CE1C381F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift in Sources */,

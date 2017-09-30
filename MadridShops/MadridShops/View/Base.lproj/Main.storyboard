@@ -84,10 +84,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3w7-7Z-G0o"/>
                     </view>
-                    <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO"/>
+                    <navigationItem key="navigationItem" title="!MAD¡" id="Rqa-4i-rqO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Zch-8W-yNm">
+                            <connections>
+                                <action selector="hitReload:" destination="wGH-tF-GG4" id="20J-hc-cy2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityButton" destination="PWe-tG-BnF" id="NcQ-6S-QV9"/>
                         <outlet property="activityIndicator" destination="f9R-0q-4Ad" id="j6K-nP-sJR"/>
+                        <outlet property="reloadButton" destination="Zch-8W-yNm" id="Pzk-MS-0q5"/>
                         <outlet property="shopButton" destination="1P2-BE-Nov" id="00z-P0-DGG"/>
                     </connections>
                 </viewController>
@@ -267,7 +274,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                         <rect key="frame" x="12.5" y="0.0" width="350" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-qx-RjT">
