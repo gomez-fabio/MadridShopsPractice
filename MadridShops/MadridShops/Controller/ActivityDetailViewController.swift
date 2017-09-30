@@ -10,7 +10,7 @@ import UIKit
 
 class ActivityDetailViewController: UIViewController {
 
-    var activity : Activity?
+    var activityCD : ActivityCD!
     
     @IBOutlet weak var activityImage: UIImageView!
     @IBOutlet weak var activityDescription: UITextView!
@@ -19,9 +19,12 @@ class ActivityDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = self.activity?.name
-        self.activityDescription.text = self.activity?.description_en
-        self.activity?.image.loadImage(into: activityImage
-        )
+        self.title = self.activityCD.name
+        self.activityDescription.text = self.activityCD.desc
+        if let image = activityCD.imageBin{
+            self.activityImage.image = UIImage(data: image)
+        } else {
+            self.activityImage.image = #imageLiteral(resourceName: "noImage")
+        }
     }
 }

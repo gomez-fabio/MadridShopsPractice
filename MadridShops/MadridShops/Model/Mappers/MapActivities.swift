@@ -38,6 +38,8 @@ func mapActivityIntoActivityCD(context: NSManagedObjectContext, activity: Activi
     activityCD.address = activity.address
     activityCD.telephone = activity.telephone
     activityCD.url = activity.url
+    activityCD.imageBin = downloadImageFromUrl(url: activity.image)
+    activityCD.logoBin  = downloadImageFromUrl(url: activity.logo)
     
     return activityCD
 }

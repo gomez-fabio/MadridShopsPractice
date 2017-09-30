@@ -36,7 +36,7 @@ class ShopsCollectionViewController: UIViewController {
             let vc = segue.destination as! ShopDetailViewController
             let shopCD: ShopCD = sender as! ShopCD
 
-            vc.shop = mapShopCDIntoShop(shopCD: shopCD)
+            vc.shopCD = shopCD
         }
     }
 

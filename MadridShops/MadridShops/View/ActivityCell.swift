@@ -9,14 +9,18 @@
 import UIKit
 
 class ActivityCell: UICollectionViewCell {
-    var activity: Activity?
+    var activityCD: ActivityCD?
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    func refresh(activity: Activity) {
-        self.activity = activity
-        self.label.text = activity.name
-        self.activity?.logo.loadImage(into: imageView)
+    func refresh(activityCD: ActivityCD) {
+        self.activityCD = activityCD
+        self.label.text = activityCD.name
+        if let logoImage = activityCD.logoBin {
+            self.imageView.image = UIImage(data: logoImage)
+        } else{
+            self.imageView.image = #imageLiteral(resourceName: "noImage")
+        }
     }
 }

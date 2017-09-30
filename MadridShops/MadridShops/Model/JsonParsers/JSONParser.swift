@@ -30,7 +30,7 @@ func parseShops(data: Data) -> Shops {
             shop.url = shopJson["url"] as! String
             shops.add(shop: shop)
             
-            //            // This way I'm going to switch between languages
+            //            // This way I'm going to switch between languages aka poor's man translation
             //            if Locale.current.languageCode == "es" {
             //                shop.desc = shopJson["description_es"]! as! String
             //            } else {

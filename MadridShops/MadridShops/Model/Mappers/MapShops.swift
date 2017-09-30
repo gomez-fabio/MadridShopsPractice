@@ -38,6 +38,8 @@ func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Shop) -> ShopCD{
     shopCD.address = shop.address
     shopCD.telephone = shop.telephone
     shopCD.url = shop.url
+    shopCD.imageBin = downloadImageFromUrl(url: shop.image)
+    shopCD.logoBin  = downloadImageFromUrl(url: shop.logo)
     
     return shopCD
 }

@@ -22,6 +22,7 @@
 		E55F60581F76F8AB008A670B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E55F60571F76F8AB008A670B /* Podfile */; };
 		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
 		E57E79091F7F108B0099FB2B /* CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E79081F7F108B0099FB2B /* CheckConnection.swift */; };
+		E57E790B1F7F21690099FB2B /* DownloadImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */; };
 		E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BD7B801F79A08F00821562 /* CoreData.framework */; };
 		E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */; };
 		E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B851F79A80C00821562 /* CoreDataStack.swift */; };
@@ -81,6 +82,7 @@
 		E55F60571F76F8AB008A670B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E57E79081F7F108B0099FB2B /* CheckConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
+		E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageFromUrl.swift; sourceTree = "<group>"; };
 		E5BD7B801F79A08F00821562 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridShops.xcdatamodel; sourceTree = "<group>"; };
 		E5BD7B851F79A80C00821562 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
 				E5F3B02E1F7838E0008F5EBB /* String+Image.swift */,
 				E57E79081F7F108B0099FB2B /* CheckConnection.swift */,
+				E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				E5F3B0111F77B5A7008F5EBB /* Activities.swift in Sources */,
 				E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */,
 				E5CE1C321F7C6C81006A863D /* ExecuteOnceInteractor.swift in Sources */,
+				E57E790B1F7F21690099FB2B /* DownloadImageFromUrl.swift in Sources */,
 				E5F3B00F1F77AD88008F5EBB /* Activity.swift in Sources */,
 				E5CE1C341F7C6D1D006A863D /* SetExecutedOnceInteractor.swift in Sources */,
 				E5F3B01B1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift in Sources */,

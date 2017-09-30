@@ -9,14 +9,25 @@
 import UIKit
 
 class ShopCell: UICollectionViewCell {
-    var shop: Shop?
+    var shopCD: ShopCD?
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    func refresh(shop: Shop) {
-        self.shop = shop
-        self.label.text = shop.name
-        self.shop?.logo.loadImage(into: imageView)
+    func refresh(shopCD: ShopCD) {
+        self.shopCD = shopCD
+        self.label.text = shopCD.name
+        
+//        if let image = UIImage(data: (self.shopCD?.logoBin)!) {
+//            self.imageView.image = image
+//        } else {
+//            self.imageView.image = #imageLiteral(resourceName: "noImage")
+//        }
+        if let logoImage = shopCD.logoBin {
+            self.imageView.image = UIImage(data: logoImage)
+        } else{
+            self.imageView.image = #imageLiteral(resourceName: "noImage")
+        }
+    
     }
 }

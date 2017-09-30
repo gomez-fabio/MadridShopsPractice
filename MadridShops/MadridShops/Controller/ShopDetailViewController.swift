@@ -10,7 +10,8 @@ import UIKit
 
 class ShopDetailViewController: UIViewController {
 
-    var shop: Shop?
+//    var shop: Shop?
+    var shopCD: ShopCD!
     
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var shopDescription: UITextView!
@@ -19,8 +20,12 @@ class ShopDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = self.shop?.name
-        self.shopDescription.text = self.shop?.description_en
-        self.shop?.image.loadImage(into: shopImage)
+        self.title = self.shopCD.name
+        self.shopDescription.text = self.shopCD.desc
+        if let image = shopCD.imageBin {
+            self.shopImage.image = UIImage(data: image)
+        } else {
+            self.shopImage.image = #imageLiteral(resourceName: "noImage")
+        }
     }
 }

@@ -29,9 +29,9 @@ class MainViewController: UIViewController {
     }
     
         func startMeUp() {
-            // TODO POD TO SHOW PROGRESS...
             ExecuteOnceInteractorImplementation().execute(closure:{
                 if isConnectedToNetwork() == true {
+                    // TODO POD TO SHOW PROGRESS...
                     self.activityIndicator.isHidden = false
                     self.activityIndicator.startAnimating()
                     self.shopButton.isHidden = true
@@ -68,8 +68,8 @@ class MainViewController: UIViewController {
             let retryAction = UIAlertAction(title: "Retry", style: .default, handler: { (action) -> Void in
                 self.startMeUp()
             })
-            
             let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
+            
             alert.addAction(retryAction)
             alert.addAction(cancelAction)
             present(alert, animated: true, completion: nil)

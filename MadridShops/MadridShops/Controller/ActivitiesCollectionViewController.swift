@@ -36,7 +36,7 @@ class ActivitiesCollectionViewController: UIViewController {
             let vc = segue.destination as! ActivityDetailViewController
             let activityCD: ActivityCD = sender as! ActivityCD
             
-            vc.activity = mapActivityCDIntoActivity(activityCD: activityCD)
+            vc.activityCD = activityCD
         }
     }
     

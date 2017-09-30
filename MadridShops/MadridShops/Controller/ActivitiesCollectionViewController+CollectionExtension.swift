@@ -22,7 +22,7 @@ extension ActivitiesCollectionViewController: UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: ActivityCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivityCell", for: indexPath) as! ActivityCell
         let activityCD: ActivityCD = fetchedResultsController.object(at: indexPath)
-        cell.refresh(activity: mapActivityCDIntoActivity(activityCD: activityCD))
+        cell.refresh(activityCD: activityCD)
         return cell
     }
     
