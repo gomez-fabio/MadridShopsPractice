@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madrid" translatesAutoresizingMaskIntoConstraints="NO" id="bZV-bq-aY0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bZV-bq-aY0">
                                 <rect key="frame" x="0.0" y="39" width="375" height="628"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-tG-BnF">
@@ -65,20 +65,40 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="f9R-0q-4Ad">
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
                             </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wt0-aX-Bxj">
+                                <rect key="frame" x="94" y="473" width="187.5" height="133.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-2Y-k5w">
+                                <rect key="frame" x="61.5" y="166.5" width="252" height="72"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shops" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-T9-EPa">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="72"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activities" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-bU-M7X">
+                                        <rect key="frame" x="180" y="0.0" width="72" height="72"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Wt0-aX-Bxj" firstAttribute="width" secondItem="zS7-mG-mXg" secondAttribute="width" multiplier="0.5" id="0Qi-l8-DzB"/>
                             <constraint firstItem="f9R-0q-4Ad" firstAttribute="centerY" secondItem="3w7-7Z-G0o" secondAttribute="centerY" id="2nn-Ef-fcO"/>
                             <constraint firstItem="f9R-0q-4Ad" firstAttribute="centerX" secondItem="3w7-7Z-G0o" secondAttribute="centerX" id="4EN-1A-db7"/>
+                            <constraint firstItem="Wt0-aX-Bxj" firstAttribute="height" secondItem="zS7-mG-mXg" secondAttribute="height" multiplier="0.2" id="6XS-vF-SJG"/>
                             <constraint firstItem="1P2-BE-Nov" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="7Ch-b6-05o"/>
+                            <constraint firstItem="3w7-7Z-G0o" firstAttribute="bottom" secondItem="Wt0-aX-Bxj" secondAttribute="bottom" multiplier="1.1" id="7Cv-6o-513"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="bottom" secondItem="bZV-bq-aY0" secondAttribute="bottom" id="7hG-Bo-FJg"/>
                             <constraint firstItem="PWe-tG-BnF" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2" id="CUO-BP-pey"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="trailing" secondItem="PWe-tG-BnF" secondAttribute="trailing" id="F64-Jt-iY8"/>
                             <constraint firstItem="bZV-bq-aY0" firstAttribute="leading" secondItem="3w7-7Z-G0o" secondAttribute="leading" id="FX4-YY-GnM"/>
+                            <constraint firstItem="ULe-2Y-k5w" firstAttribute="centerX" secondItem="3w7-7Z-G0o" secondAttribute="centerX" id="PLa-dQ-9LZ"/>
                             <constraint firstItem="PWe-tG-BnF" firstAttribute="width" secondItem="zS7-mG-mXg" secondAttribute="width" multiplier="0.5" id="Qaf-Zv-eus"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="trailing" secondItem="bZV-bq-aY0" secondAttribute="trailing" id="Tmh-tk-7Kj"/>
                             <constraint firstItem="3w7-7Z-G0o" firstAttribute="top" secondItem="bZV-bq-aY0" secondAttribute="top" constant="25" id="f3y-dD-s4W"/>
                             <constraint firstItem="1P2-BE-Nov" firstAttribute="width" secondItem="zS7-mG-mXg" secondAttribute="width" multiplier="0.5" id="hdg-iK-bzx"/>
+                            <constraint firstItem="Wt0-aX-Bxj" firstAttribute="centerX" secondItem="3w7-7Z-G0o" secondAttribute="centerX" id="o9h-KY-MyG"/>
+                            <constraint firstItem="ULe-2Y-k5w" firstAttribute="top" secondItem="3w7-7Z-G0o" secondAttribute="top" multiplier="2.6" id="oGb-Iv-f6f"/>
                             <constraint firstItem="1P2-BE-Nov" firstAttribute="leading" secondItem="3w7-7Z-G0o" secondAttribute="leading" id="rNS-ye-XEW"/>
                             <constraint firstItem="1P2-BE-Nov" firstAttribute="trailing" secondItem="3w7-7Z-G0o" secondAttribute="trailing" multiplier="0.5" id="znq-Zf-cwP"/>
                         </constraints>
@@ -274,7 +294,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                         <rect key="frame" x="12.5" y="0.0" width="350" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-qx-RjT">
@@ -339,7 +359,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Sc-Fcr">
-                                                <rect key="frame" x="0.0" y="233.5" width="375" height="266"/>
+                                                <rect key="frame" x="0.0" y="233.5" width="375" height="266.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem fistrum papaar papaar te voy a borrar el cerito por la gloria de mi madre diodenoo llevame al sircoo apetecan mamaar qué dise usteer no te digo trigo por no llamarte Rodrigor. Condemor papaar papaar no te digo trigo por no llamarte Rodrigor a peich ese pedazo de a gramenawer diodenoo caballo blanco caballo negroorl la caidita caballo blanco caballo negroorl apetecan. Te voy a borrar el cerito papaar papaar mamaar por la gloria de mi madre. Pupita benemeritaar pupita llevame al sircoo jarl no puedor va usté muy cargadoo a gramenawer. Ese hombree a wan jarl ahorarr amatomaa está la cosa muy malar torpedo. De la pradera ese pedazo de de la pradera llevame al sircoo está la cosa muy malar a wan no puedor ese hombree. Benemeritaar diodeno se calle ustée ahorarr.
 
@@ -402,6 +422,9 @@ Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl ap
         </scene>
     </scenes>
     <resources>
-        <image name="madrid" width="750" height="1334"/>
+        <image name="activities" width="72" height="72"/>
+        <image name="background" width="750" height="1334"/>
+        <image name="logo" width="457" height="277"/>
+        <image name="shops" width="65" height="65"/>
     </resources>
 </document>
