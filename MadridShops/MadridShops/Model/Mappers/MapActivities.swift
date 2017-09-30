@@ -40,6 +40,7 @@ func mapActivityIntoActivityCD(context: NSManagedObjectContext, activity: Activi
     activityCD.url = activity.url
     activityCD.imageBin = downloadImageFromUrl(url: activity.image)
     activityCD.logoBin  = downloadImageFromUrl(url: activity.logo)
-    
+    activityCD.mapBin = downloadImageFromUrl(url: GOOGLE_MAPS_API + "\(activity.latitude!),\(activity.longitude!)")
+//    print (GOOGLE_MAPS_API + "\(activity.latitude!),\(activity.longitude!)")
     return activityCD
 }

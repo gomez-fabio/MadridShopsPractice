@@ -22,10 +22,17 @@ class ShopDetailViewController: UIViewController {
         
         self.title = self.shopCD.name
         self.shopDescription.text = self.shopCD.desc
+        
         if let image = shopCD.imageBin {
             self.shopImage.image = UIImage(data: image)
         } else {
             self.shopImage.image = #imageLiteral(resourceName: "noImage")
+        }
+        
+        if let map = shopCD.mapBin{
+            self.shopMapImage.image = UIImage(data: map)
+        } else {
+            self.shopMapImage.image = #imageLiteral(resourceName: "noImage")
         }
     }
 }

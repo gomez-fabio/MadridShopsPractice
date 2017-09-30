@@ -40,6 +40,7 @@ func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Shop) -> ShopCD{
     shopCD.url = shop.url
     shopCD.imageBin = downloadImageFromUrl(url: shop.image)
     shopCD.logoBin  = downloadImageFromUrl(url: shop.logo)
-    
+    //shopCD.mapBin = downloadImageFromUrl(url: GOOGLE_MAPS_API + "\(shop.latitude!),\(shop.longitude!)")
+    //print (GOOGLE_MAPS_API + "\(shop.latitude!),\(shop.longitude!)")
     return shopCD
 }

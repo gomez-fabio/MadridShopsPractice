@@ -21,10 +21,17 @@ class ActivityDetailViewController: UIViewController {
         
         self.title = self.activityCD.name
         self.activityDescription.text = self.activityCD.desc
+        
         if let image = activityCD.imageBin{
             self.activityImage.image = UIImage(data: image)
         } else {
             self.activityImage.image = #imageLiteral(resourceName: "noImage")
+        }
+        
+        if let map = activityCD.mapBin{
+            self.activityMapImage.image = UIImage(data: map)
+        } else {
+            self.activityMapImage.image = #imageLiteral(resourceName: "noImage")
         }
     }
 }
