@@ -25,8 +25,11 @@ class ActivitiesCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let madridLocation = CLLocation(latitude: 40.416605, longitude: -3.703786)
+        let madridRegion = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
         
         self.locationManager.requestWhenInUseAuthorization()
+        self.map.setRegion(madridRegion, animated: true)
     
         self.activitiesCollectionView.delegate = self
         self.activitiesCollectionView.dataSource = self
