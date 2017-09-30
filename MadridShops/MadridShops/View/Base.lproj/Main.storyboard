@@ -71,12 +71,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-2Y-k5w">
                                 <rect key="frame" x="61.5" y="166.5" width="252" height="72"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shops" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-T9-EPa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPc-dU-3mj" userLabel="ButtonShop">
                                         <rect key="frame" x="0.0" y="0.0" width="65" height="72"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activities" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-bU-M7X">
+                                        <state key="normal" image="shops"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsImageSegue" id="mvv-W0-oHH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-4G-HIb" userLabel="ButtonActivities">
                                         <rect key="frame" x="180" y="0.0" width="72" height="72"/>
-                                    </imageView>
+                                        <state key="normal" image="activities"/>
+                                        <connections>
+                                            <segue destination="ezB-hY-M2e" kind="show" identifier="ShowActivitiesImageSegue" id="jJx-EA-3kV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -167,7 +175,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D8W-pg-BQ0">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8W-pg-BQ0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
@@ -186,6 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Shops" id="kfX-Di-H6t"/>
                     <connections>
+                        <outlet property="map" destination="D8W-pg-BQ0" id="dmd-cc-Kak"/>
                         <outlet property="shopsCollectionView" destination="US7-qU-NSv" id="o44-eQ-ujY"/>
                         <segue destination="tk4-PC-kqZ" kind="show" identifier="ShowShopDetailSegue" id="XIm-kW-N1U"/>
                     </connections>
@@ -309,7 +318,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-Zf-7Rl">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-Zf-7Rl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
@@ -329,6 +338,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                     <navigationItem key="navigationItem" title="Activities" id="5sg-Qw-1f3"/>
                     <connections>
                         <outlet property="activitiesCollectionView" destination="bbY-1y-eHO" id="BQe-7e-KkL"/>
+                        <outlet property="map" destination="b8t-Zf-7Rl" id="0tB-Aj-4mS"/>
                         <segue destination="bwZ-ie-qT4" kind="show" identifier="ShowActivityDetailSegue" id="NBE-4r-TYz"/>
                     </connections>
                 </viewController>
@@ -351,7 +361,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Sc-Fcr">
-                                                <rect key="frame" x="0.0" y="233.5" width="375" height="266.5"/>
+                                                <rect key="frame" x="0.0" y="233.5" width="375" height="266"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem fistrum papaar papaar te voy a borrar el cerito por la gloria de mi madre diodenoo llevame al sircoo apetecan mamaar qué dise usteer no te digo trigo por no llamarte Rodrigor. Condemor papaar papaar no te digo trigo por no llamarte Rodrigor a peich ese pedazo de a gramenawer diodenoo caballo blanco caballo negroorl la caidita caballo blanco caballo negroorl apetecan. Te voy a borrar el cerito papaar papaar mamaar por la gloria de mi madre. Pupita benemeritaar pupita llevame al sircoo jarl no puedor va usté muy cargadoo a gramenawer. Ese hombree a wan jarl ahorarr amatomaa está la cosa muy malar torpedo. De la pradera ese pedazo de de la pradera llevame al sircoo está la cosa muy malar a wan no puedor ese hombree. Benemeritaar diodeno se calle ustée ahorarr.
 
@@ -419,4 +429,8 @@ Quietooor está la cosa muy malar sexuarl diodeno. Me cago en tus muelas jarl ap
         <image name="logo" width="457" height="277"/>
         <image name="shops" width="65" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jJx-EA-3kV"/>
+        <segue reference="mvv-W0-oHH"/>
+    </inferredMetricsTieBreakers>
 </document>

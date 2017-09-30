@@ -93,13 +93,13 @@ class MainViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowShopsSegue" {
+        if segue.identifier == "ShowShopsSegue"  || segue.identifier == "ShowShopsImageSegue" {
             let vc = segue.destination as! ShopsCollectionViewController
             
             vc.context = self.context
         }
         
-        if segue.identifier == "ShowActivitiesSegue" {
+        if segue.identifier == "ShowActivitiesSegue" || segue.identifier == "ShowActivitiesImageSegue" {
             let vc = segue.destination as! ActivitiesCollectionViewController
             
             vc.context = self.context

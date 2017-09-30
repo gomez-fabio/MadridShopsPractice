@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import MapKit
 
 class ShopsCollectionViewController: UIViewController {
     
@@ -15,11 +17,16 @@ class ShopsCollectionViewController: UIViewController {
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
     let kInset : CGFloat = 10
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var shopsCollectionView: UICollectionView!
+    @IBOutlet weak var map: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        self.locationManager.requestWhenInUseAuthorization()
         
         self.shopsCollectionView.delegate = self
         self.shopsCollectionView.dataSource = self

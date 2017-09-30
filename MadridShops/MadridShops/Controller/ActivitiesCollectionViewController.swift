@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import MapKit
 
 class ActivitiesCollectionViewController: UIViewController {
     
@@ -15,14 +17,19 @@ class ActivitiesCollectionViewController: UIViewController {
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
     let kInset : CGFloat = 10
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
+    @IBOutlet weak var map: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            self.activitiesCollectionView.delegate = self
-            self.activitiesCollectionView.dataSource = self
+        
+        self.locationManager.requestWhenInUseAuthorization()
+    
+        self.activitiesCollectionView.delegate = self
+        self.activitiesCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
