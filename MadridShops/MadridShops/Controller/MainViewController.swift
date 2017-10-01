@@ -13,12 +13,21 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var shopButton: UIButton!
+    @IBOutlet weak var buttonShop: UIButton!
     @IBOutlet weak var activityButton: UIButton!
+    @IBOutlet weak var buttonActivity: UIButton!
     @IBOutlet weak var reloadButton: UIBarButtonItem!
     
     @IBAction func hitReload(_ sender: Any) {self.startMeUp()}
     
     var context: NSManagedObjectContext!
+
+// TODO TO TIDY UP THE CODE
+//    enum State {
+//        case Download
+//        case NoConnection
+//        case Success
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +45,16 @@ class MainViewController: UIViewController {
                     self.activityIndicator.startAnimating()
                     self.shopButton.isHidden = true
                     self.activityButton.isHidden = true
+                    self.buttonShop.isHidden = true
+                    self.buttonActivity.isHidden = true
                     self.reloadButton.isEnabled = false
                     self.initializeShopsData()
                 } else {
                     self.activityIndicator.isHidden = true
                     self.shopButton.isHidden = true
                     self.activityButton.isHidden = true
+                    self.buttonShop.isHidden = true
+                    self.buttonActivity.isHidden = true
                     self.reloadButton.isEnabled = true
                     self.alertMessage()
                 }
@@ -87,6 +100,8 @@ class MainViewController: UIViewController {
                     self.activityIndicator.stopAnimating()
                     self.shopButton.isHidden = false
                     self.activityButton.isHidden = false
+                    self.buttonShop.isHidden = false
+                    self.buttonActivity.isHidden = false
                 })
             })
         }

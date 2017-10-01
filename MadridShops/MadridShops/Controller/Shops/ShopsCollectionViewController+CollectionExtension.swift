@@ -1,31 +1,34 @@
 //
-//  ActivitiesCollectionViewController+CollectionExtension.swift
+//  ShopsCollectionViewController+CollectionExtension.swift
 //  MadridShops
 //
-//  Created by Fabio Gomez on 24/9/17.
+//  Created by Fabio Gomez on 23/9/17.
 //  Copyright © 2017 Fabio Gomez. All rights reserved.
 //
 
 import UIKit
 
-extension ActivitiesCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+extension ShopsCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return fetchedResultsController.sections?.count ?? 0
+        return shopFetchedResultsController(context: context).sections?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let sectionInfo = fetchedResultsController.sections![section]
+        let sectionInfo = shopFetchedResultsController(context: context).sections![section]
         return sectionInfo.numberOfObjects
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: ActivityCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivityCell", for: indexPath) as! ActivityCell
-        let activityCD: ActivityCD = fetchedResultsController.object(at: indexPath)
-        cell.refresh(activityCD: activityCD)
+        let cell: ShopCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopCell", for: indexPath) as! ShopCell
+        let shopCD: ShopCD = shopFetchedResultsController(context: context).object(at: indexPath)
+        cell.refresh(shopCD: shopCD)
         return cell
     }
+
     
+    // Cell Size (Credits: some guy at stackoverflow...)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         return CGSize(width: (UIScreen.main.bounds.width - 2*kInset - kLineSpacing), height: kCellHeight)
@@ -41,5 +44,5 @@ extension ActivitiesCollectionViewController: UICollectionViewDelegate, UICollec
         return UIEdgeInsets(top: kInset, left: kInset, bottom: kInset, right: kInset)
     }
     
-}
 
+}

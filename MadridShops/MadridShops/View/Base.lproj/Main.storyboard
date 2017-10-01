@@ -122,6 +122,8 @@
                     <connections>
                         <outlet property="activityButton" destination="PWe-tG-BnF" id="NcQ-6S-QV9"/>
                         <outlet property="activityIndicator" destination="f9R-0q-4Ad" id="j6K-nP-sJR"/>
+                        <outlet property="buttonActivity" destination="Gtj-4G-HIb" id="4pE-4y-NXk"/>
+                        <outlet property="buttonShop" destination="QPc-dU-3mj" id="ELv-AW-P3A"/>
                         <outlet property="reloadButton" destination="Zch-8W-yNm" id="Pzk-MS-0q5"/>
                         <outlet property="shopButton" destination="1P2-BE-Nov" id="00z-P0-DGG"/>
                     </connections>
@@ -194,7 +196,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Shops" id="kfX-Di-H6t"/>
                     <connections>
-                        <outlet property="map" destination="D8W-pg-BQ0" id="dmd-cc-Kak"/>
+                        <outlet property="mapView" destination="D8W-pg-BQ0" id="8ri-AS-jZR"/>
                         <outlet property="shopsCollectionView" destination="US7-qU-NSv" id="o44-eQ-ujY"/>
                         <segue destination="tk4-PC-kqZ" kind="show" identifier="ShowShopDetailSegue" id="XIm-kW-N1U"/>
                     </connections>
@@ -338,7 +340,7 @@ Ahorarr sexuarl está la cosa muy malar te va a hasé pupitaa la caidita. Beneme
                     <navigationItem key="navigationItem" title="Activities" id="5sg-Qw-1f3"/>
                     <connections>
                         <outlet property="activitiesCollectionView" destination="bbY-1y-eHO" id="BQe-7e-KkL"/>
-                        <outlet property="map" destination="b8t-Zf-7Rl" id="0tB-Aj-4mS"/>
+                        <outlet property="mapView" destination="b8t-Zf-7Rl" id="sq3-Pf-lpX"/>
                         <segue destination="bwZ-ie-qT4" kind="show" identifier="ShowActivityDetailSegue" id="NBE-4r-TYz"/>
                     </connections>
                 </viewController>
