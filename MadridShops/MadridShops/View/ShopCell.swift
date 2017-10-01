@@ -11,12 +11,21 @@ import UIKit
 class ShopCell: UICollectionViewCell {
     var shopCD: ShopCD?
     
+    @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    
     func refresh(shopCD: ShopCD) {
         self.shopCD = shopCD
-        self.label.text = shopCD.name
+        
+        
+        if let image = shopCD.imageBin {
+            self.backImage.image = UIImage(data: image)
+        } else {
+            self.backImage.image = #imageLiteral(resourceName: "noImage")
+        }
+        
         
 //        if let image = UIImage(data: (self.shopCD?.logoBin)!) {
 //            self.imageView.image = image
@@ -28,6 +37,7 @@ class ShopCell: UICollectionViewCell {
         } else{
             self.imageView.image = #imageLiteral(resourceName: "noImage")
         }
+        self.label.text = shopCD.name
     
     }
 }

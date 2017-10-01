@@ -16,7 +16,7 @@ class ShopsCollectionViewController: UIViewController, CLLocationManagerDelegate
     var context: NSManagedObjectContext!
     let kCellHeight : CGFloat = 50
     let kLineSpacing : CGFloat = 10
-    let kInset : CGFloat = 10
+    let kInset : CGFloat = 5
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var shopsCollectionView: UICollectionView!

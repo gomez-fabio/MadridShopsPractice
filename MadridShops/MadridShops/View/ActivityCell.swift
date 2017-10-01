@@ -13,6 +13,7 @@ class ActivityCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     func refresh(activityCD: ActivityCD) {
         self.activityCD = activityCD
@@ -21,6 +22,12 @@ class ActivityCell: UICollectionViewCell {
             self.imageView.image = UIImage(data: logoImage)
         } else{
             self.imageView.image = #imageLiteral(resourceName: "noImage")
+        }
+        
+        if let backgroundImage = activityCD.imageBin {
+            self.backgroundImage.image = UIImage(data: backgroundImage)
+        } else {
+            self.backgroundImage.image = #imageLiteral(resourceName: "noImage")
         }
     }
 }
