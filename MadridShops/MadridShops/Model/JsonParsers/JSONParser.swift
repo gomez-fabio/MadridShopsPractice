@@ -19,6 +19,11 @@ func parseShops(data: Data) -> Shops {
             let shop = Shop(name: shopJson["name"]! as! String)
             shop.description_en = shopJson["description_en"] as! String
             shop.description_es = shopJson["description_es"] as! String
+            if Locale.current.languageCode == "es" {
+                shop.desc = shopJson["description_es"]! as! String
+            } else {
+                shop.desc = shopJson["description_en"]! as! String
+            }
             shop.latitude = Float((shopJson["gps_lat"] as! String).trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ",", with: ""))
             shop.longitude = Float((shopJson["gps_lon"] as! String).trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ",", with: ""))
             shop.image = shopJson["img"] as! String
@@ -29,13 +34,7 @@ func parseShops(data: Data) -> Shops {
             shop.telephone = shopJson["telephone"] as! String
             shop.url = shopJson["url"] as! String
             shops.add(shop: shop)
-            
-            //   //TODO This way I'm going to switch between languages aka poor's man translation
-            //            if Locale.current.languageCode == "es" {
-            //                shop.desc = shopJson["description_es"]! as! String
-            //            } else {
-            //                shop.desc = shopJson["description_en"]! as! String
-            //            }
+
         }
     } catch {
         print("Error parsing JSON")
@@ -54,6 +53,11 @@ func parseActivities(data: Data) -> Activities {
             let activity = Activity(name: activityJson["name"]! as! String)
             activity.description_en = activityJson["description_en"] as! String
             activity.description_es = activityJson["description_es"] as! String
+            if Locale.current.languageCode == "es" {
+                activity.desc = activityJson["description_es"]! as! String
+            } else {
+                activity.desc = activityJson["description_en"]! as! String
+            }
             activity.latitude = Float((activityJson["gps_lat"] as! String).trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ",", with: ""))
             activity.longitude = Float((activityJson["gps_lon"] as! String).trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ",", with: ""))
             activity.image = activityJson["img"] as! String

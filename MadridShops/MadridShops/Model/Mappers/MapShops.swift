@@ -12,7 +12,7 @@ import CoreData
 func mapShopCDIntoShop(shopCD: ShopCD) -> Shop{
     
     let shop = Shop(name: shopCD.name!)
-    shop.description_en = shopCD.desc!
+    shop.desc = shopCD.desc!
     shop.latitude = shopCD.latitude
     shop.longitude = shopCD.longitude
     shop.image  = shopCD.image ?? ""
@@ -29,7 +29,7 @@ func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Shop) -> ShopCD{
     
     let shopCD = ShopCD(context: context)
     shopCD.name = shop.name
-    shopCD.desc = shop.description_en
+    shopCD.desc = shop.desc
     shopCD.latitude = shop.latitude!
     shopCD.longitude = shop.longitude!
     shopCD.image  = shop.image
@@ -40,7 +40,7 @@ func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Shop) -> ShopCD{
     shopCD.url = shop.url
     shopCD.imageBin = downloadImageFromUrl(url: shop.image)
     shopCD.logoBin  = downloadImageFromUrl(url: shop.logo)
-    //shopCD.mapBin = downloadImageFromUrl(url: GOOGLE_MAPS_API + "\(shop.latitude!),\(shop.longitude!)")
+    shopCD.mapBin = downloadImageFromUrl(url: GOOGLE_MAPS_API + "\(shop.latitude!),\(shop.longitude!)")
     //print (GOOGLE_MAPS_API + "\(shop.latitude!),\(shop.longitude!)")
     return shopCD
 }

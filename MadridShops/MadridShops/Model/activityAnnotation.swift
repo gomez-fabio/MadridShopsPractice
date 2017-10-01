@@ -11,7 +11,6 @@ import MapKit
 
 class ActivityMapPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
-    
     var title : String?
     var subtitle : String?
     var activityCD : ActivityCD

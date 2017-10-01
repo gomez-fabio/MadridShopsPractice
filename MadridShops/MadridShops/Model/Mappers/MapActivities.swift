@@ -12,7 +12,7 @@ import CoreData
 func mapActivityCDIntoActivity(activityCD: ActivityCD) -> Activity{
     
     let activity = Activity(name: activityCD.name!)
-    activity.description_en = activityCD.desc!
+    activity.desc = activityCD.desc!
     activity.latitude = activityCD.latitude
     activity.longitude = activityCD.longitude
     activity.image  = activityCD.image ?? ""
@@ -29,7 +29,7 @@ func mapActivityIntoActivityCD(context: NSManagedObjectContext, activity: Activi
     
     let activityCD = ActivityCD(context: context)
     activityCD.name = activity.name
-    activityCD.desc = activity.description_en
+    activityCD.desc = activity.desc
     activityCD.latitude = activity.latitude!
     activityCD.longitude = activity.longitude!
     activityCD.image  = activity.image

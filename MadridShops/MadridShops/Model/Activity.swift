@@ -21,6 +21,7 @@ public class Activity {
     var address: String = ""
     var telephone: String = ""
     var url: String = ""
+    var desc: String = ""
     
     public init(name: String) {
         self.name = name
